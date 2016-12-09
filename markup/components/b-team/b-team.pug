@@ -1,0 +1,22 @@
+include ../b-social-net/b-social-net
+
+mixin b-team(img, name, category, description)
+
+  section.b-team(class!=attributes.class)
+    .b-team__inner
+      .b-team__media
+        img.img-responsive.center-block(src="assets/media/components/b-team/" + img + ".jpg", alt="Foto")
+      h3.b-team__name= name
+      .b-team__category= category
+      if description
+        .b-team__description= description
+    .b-team__hover
+      .b-team__name= name
+      .b-team__category= category
+      +social-net([
+        {'href': "twitter", 'icon': 'twitter'},
+        {'href': "facebook", 'icon': 'facebook'},
+        {'href': "instagram", 'icon': 'instagram'},
+        {'href': "plus.google", 'icon': 'google-plus'}], '')
+
+  // end .b-team

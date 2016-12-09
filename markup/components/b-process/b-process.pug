@@ -1,0 +1,41 @@
+mixin b-process()
+
+  section.b-process.area-bg.area-bg_grad.area-bg_op_90.parallax(style="background-image: url(assets/media/content/bg/bg-1.jpg);")
+    .area-bg__inner
+      .container
+        .row
+          .col-xs-12
+            .text-center
+              .ui-subtitle-block Achieving The Business Goal
+              h2.ui-title-block Process We Follow
+              .ui-decor-1.bg-primary
+
+              ul.b-process-nav.js-tabs
+                li.b-process-nav__item.active
+                  a.b-process-nav__link(href="#b-process-1" data-toggle="tab")
+                    span.b-process-nav__icon.stroke.icon-Pencil
+                    span.b-process-nav__title Plan & Sketch
+
+                li.b-process-nav__item
+                  a.b-process-nav__link(href="#b-process-2" data-toggle="tab")
+                    span.b-process-nav__icon.stroke.icon-Glasses
+                    span.b-process-nav__title design & Develop
+
+                li.b-process-nav__item
+                  a.b-process-nav__link(href="#b-process-3" data-toggle="tab")
+                    span.b-process-nav__icon.stroke.icon-Plaine
+                    span.b-process-nav__title Test & Deliver
+
+
+              .tab-content
+                .b-process-tab.tab-pane.fade.in.active#b-process-1
+                  p
+                    strong Design & Development
+                    |  amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim ad minim nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit in voluptate velit esse cillum dolore pariatur sed excepteur sint occaecat cupidatat non proidente sunt in culpa qui officia deserunt.
+                .b-process-tab.tab-pane.fade#b-process-2
+                  p
+                    strong Design & Development
+                    |  amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim ad minim nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                .b-process-tab.tab-pane.fade#b-process-3
+                  p Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim ad minim nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  // end .b-process

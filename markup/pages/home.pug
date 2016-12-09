@@ -1,0 +1,182 @@
+extends _template.pug
+
+
+block head
+  head
+    +head(head.home)
+
+  - pageHome = true;
+
+
+block content
+
+
+  +b-main-slider()
+
+
+  .section-default
+    .container
+      .row
+        .col-md-6
+          section.section-type-1
+            h2.ui-title-block-3 We follow intelligent methodology to deliver awesome solutions!
+            p Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut ret dolore magna aliqua ut enim minim beniaps quis nostrual exercitation ulamco laborisa sed bcea lorem ipsum dolor comoda.
+            p Sit amet lorem ipsum dolor sit amet orem psum dolor sit amet consectetur adipisic elit do eiusmod tempor incididuntut labore et dolore magna aliqua utae enimad minim ven quis nostrud exercitation ullamco laboris nisi ut aliquip ex com modo consequat duisa irure dolor in reprehenderit in voluptate.
+
+          +b-awards()
+
+        .col-md-6
+          .img-group-1
+            img.img-group-1__img-1.img-responsive(src="assets/media/content/other/1.jpg", alt="foto")
+            img.img-group-1__img-2.img-round.img-responsive(src="assets/media/content/other/2.jpg", alt="foto")
+
+          +b-blockquote-3('How well we communicate is determined not by how well we say things, but how well we are understood.', 'Andrew Grove')(class="b-blockquote-3")
+  // end .section-default
+
+
+  +b-advantages()
+
+
+  section.section-default.section-default_pdn-btm_0
+    .container
+      .row
+        .col-sm-11
+          .ui-subtitle-block The Works We Did
+          h2.ui-title-block Portfolio Items
+          .ui-decor-1.bg-primary
+          .block-paragraphs
+            p Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim minim beniaps quis nostrual exercitationullamco laboris sed bcea lorem ipsum dolor comoda lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt.
+    .text-center
+      +b-isotope-1()(class="b-isotope_mod-a")
+  // end .section-default
+
+
+  +b-info()
+
+
+  section.section-default.section-default_pdn-btm_0
+    .container
+      .row
+        .col-sm-11
+          .ui-subtitle-block Success is Everything
+          h2.ui-title-block Our Expertise
+          .ui-decor-1.bg-primary
+          .block-paragraphs
+            p Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim minim beniaps quis nostrual exercitationullamco laboris sed bcea lorem ipsum dolor comoda lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt.
+  // end .section-default
+
+
+  .section-type-2.bg-grey-2
+      .container-fluid
+        .row
+          .col-lg-6.col-md-4.col-sm-4
+            .img-group-2
+              img.img-group-2__img-2.img-round.img-round_border-0.img-responsive(src="assets/media/content/other/450x450_2.jpg", alt="foto")
+              img.img-group-2__img-1.img-round.img-round_lg.img-round_grey.img-responsive(src="assets/media/content/other/450x450_1.jpg", alt="foto")
+
+          .col-lg-6.col-md-8.col-sm-8
+            .bxslider
+              +b-advantages-2('flaticon-writing', 'Web Design', 'Corem ipsum dolor sit amet consecter adipsicing elit sed usm temp incidid dolore magna aliqua ut enim minim beniaps quis nostrual ex citationullamco sed bcea ipsum dolor amet consectetur adipisicing elit.', '')(class="b-advantages-2")
+              +b-advantages-2('flaticon-technology', 'startup ideas', 'Corem ipsum dolor sit amet consecter adipsicing elit sed usm temp incidid dolore magna aliqua ut enim minim beniaps quis nostrual ex citationullamco sed bcea ipsum dolor amet consectetur adipisicing elit.', '')(class="b-advantages-2")
+              +b-advantages-2('flaticon-hand', 'User Interaction', 'Corem ipsum dolor sit amet consecter adipsicing elit sed usm temp incidid dolore magna aliqua ut enim minim beniaps quis nostrual ex citationullamco sed bcea ipsum dolor amet consectetur adipisicing elit.', '')(class="b-advantages-2")
+              +b-advantages-2('flaticon-writing', 'Web Design', 'Corem ipsum dolor sit amet consecter adipsicing elit sed usm temp incidid dolore magna aliqua ut enim minim beniaps quis nostrual ex citationullamco sed bcea ipsum dolor amet consectetur adipisicing elit.', '')(class="b-advantages-2")
+              +b-advantages-2('flaticon-technology', 'startup ideas', 'Corem ipsum dolor sit amet consecter adipsicing elit sed usm temp incidid dolore magna aliqua ut enim minim beniaps quis nostrual ex citationullamco sed bcea ipsum dolor amet consectetur adipisicing elit.', '')(class="b-advantages-2")
+              +b-advantages-2('flaticon-hand', 'User Interaction', 'Corem ipsum dolor sit amet consecter adipsicing elit sed usm temp incidid dolore magna aliqua ut enim minim beniaps quis nostrual ex citationullamco sed bcea ipsum dolor amet consectetur adipisicing elit.', '')(class="b-advantages-2")
+              +b-advantages-2('flaticon-technology', 'startup ideas', 'Corem ipsum dolor sit amet consecter adipsicing elit sed usm temp incidid dolore magna aliqua ut enim minim beniaps quis nostrual ex citationullamco sed bcea ipsum dolor amet consectetur adipisicing elit.', '')(class="b-advantages-2")
+              +b-advantages-2('flaticon-hand', 'User Interaction', 'Corem ipsum dolor sit amet consecter adipsicing elit sed usm temp incidid dolore magna aliqua ut enim minim beniaps quis nostrual ex citationullamco sed bcea ipsum dolor amet consectetur adipisicing elit.', '')(class="b-advantages-2")
+  // end .section-type-2
+
+
+  section.section-type-3
+    .container
+      .row
+        .col-md-7
+          h2.ui-title-block-2.text-second What People Say ...
+          .owl-carousel.owl-theme.owl-theme_pdg_sm.enable-owl-carousel(
+            data-pagination="false"
+            data-navigation="true"
+            data-single-item="true"
+            data-auto-play="7000"
+            data-transition-style="fade"
+            data-main-text-animation="true"
+            data-after-init-delay="3000"
+            data-after-move-delay="1000"
+            data-stop-on-hover="true")
+
+            +b-blockquote-2('Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat.', 'Martin Hans', 'CEO NewTech Ltd.')(class="b-blockquote-2")
+            +b-blockquote-2('Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'Martin Hans', 'CEO NewTech Ltd.')(class="b-blockquote-2")
+            +b-blockquote-2('Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', 'Martin Hans', 'CEO NewTech Ltd.')(class="b-blockquote-2")
+          // end carousel
+        .col-md-5
+          img.pull-right.img-responsive(src="assets/media/content/other/3.jpg", alt="foto")
+  // end .section-type-3
+
+
+  section.section-team.bg-grey-2
+    .container
+      .row
+        .col-sm-11
+          .ui-subtitle-block Meet Our Professionals
+          h2.ui-title-block Skiled Team
+          .ui-decor-1.ui-decor-1_white.bg-primary
+          .block-paragraphs
+            p Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim minim beniaps quis nostrual exercitationullamco laboris sed bcea lorem ipsum dolor comoda lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt.
+
+      .row
+        .col-xs-12
+          .b-team-group.owl-carousel.owl-theme.enable-owl-carousel(
+            data-min480="1"
+            data-min768="3"
+            data-min992="4"
+            data-min1200="4"
+            data-pagination="false"
+            data-navigation="true"
+            data-auto-play="4000"
+            data-stop-on-hover="true")
+
+            +b-team('1', 'alex rasman', 'ceo . founder', '')
+            +b-team('2', 'tom albert', 'developement head', '')
+            +b-team('3', 'sara anderson', 'the designer', '')
+            +b-team('4', 'chris donald', 'manager admin', '')
+          // end slider
+  // end .section-team
+
+
+  section.section-default
+    .container
+      .row
+        .col-sm-11
+          .ui-subtitle-block Latest From Blog
+          h2.ui-title-block The News
+          .ui-decor-1.ui-decor-1_white.bg-primary
+          .block-paragraphs
+            p Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim minim beniaps quis nostrual exercitationullamco laboris sed bcea lorem ipsum dolor comoda lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt.
+      .posts-wrap
+        .row
+          .col-md-6
+            +post-1('540x405/1', 'Corem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt labore', '', 'Sam Jones', 'oct 16, 2016')(class="b-post-1")
+          .col-md-6
+            +post-2('25', 'october', 'Ipsum dolor sit amet consectetur adipisicing elit sed tempor incididunt labore dolore aliqua', 'Corem ipsum dolor sit amet consecter adipsicing elit sed tempor incididunt dolore magna aliqua ut enim minim beniaps quis nostrual ...', 'Sam Jones')(class="b-post-2")
+            +post-2('14', 'october', 'Enim ad minim veniam, quis nostrud exercitation ulla nisib aliquip sed exea consequat', 'Corem ipsum dolor sit amet consecter adipsicing elit sed tempor incididunt dolore magna aliqua ut enim minim beniaps quis nostrual ...', 'Sam Jones')(class="b-post-2")
+      .text-center
+        a.btn.btn-grad(href="blog-main.html")
+          span.wrap-btn-grad visit the blog
+  // end .section-default
+
+
+  .section-brands.bg-grey-2
+    .container
+      .row
+        .col-xs-12
+          +b-brands()
+  // end .section-brands
+
+
+  +b-info-2()
+
+
+block scripts
+
+  // Main slider
+  script(src="assets/plugins/slider-pro/jquery.sliderPro.min.js")
+

@@ -1,0 +1,18 @@
+mixin b-form-contact()
+
+  #success
+  form.b-form-contacts.ui-form#contactForm(action="#", method="post")
+    .row
+      .col-md-6
+        input.form-control#user-name(type="text", name="user-name", placeholder="Full Name", required)
+        input.form-control#user-phone(type="tel", name="user-phone", placeholder="Phone")
+
+      .col-md-6
+        input.form-control#user-email(type="email", name="user-email", placeholder="Email")
+        input.form-control.last-block_mrg-btn_0#user-subject(type="text", name="user-subject", placeholder="Event type")
+    .row
+      .col-xs-12
+        textarea.form-control#user-message(rows="3", placeholder="Message ...", required)
+        button.btn.btn-default Send Message
+
+  // end .b-form-contact

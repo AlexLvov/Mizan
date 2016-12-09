@@ -1,0 +1,16 @@
+extends _template.pug
+
+block head
+  head
+    +head(head.portfolio)
+
+block content
+
+  +b-title-page('our portfolio III', 'the works')
+
+  .section-default.text-center
+    .container
+      .row
+        .col-xs-12
+          +b-isotope-3()(class="b-isotope-3")
+  // end .section-default

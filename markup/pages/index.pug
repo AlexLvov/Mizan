@@ -1,0 +1,139 @@
+//include ../components/loader/loader
+include ../components/head/head
+include ../components/footer/footer
+include ../components/b-title-page/b-title-page
+
+doctype html
+html(class="no-js", lang="en")
+  head
+    +head(head.index)
+  body
+    |%=symbols=%
+
+
+    //+loader()
+
+    .l-theme.animated-css(data-header="sticky" data-header-top="200")
+
+      .container
+        .row
+          .col-xs-12
+            a.demopage-logo(href="home.html")
+             img.center-block.img-responsive(src="assets/media/general/logo-dark.png", alt="Logo")
+
+
+      .text-center
+        +index-title-page()
+
+      section.demopage-content#demo-page
+        .container
+          h2.demopage-title Select a demo page
+          .starSeparatorBox.clearfix
+            .demopage-preview
+
+              // Group-1
+              .col-sm-4.col-xs-12.clearfix.scrollreveal
+                .demopage-preview_item
+                  a.demopage-preview_inner.demopage-img.demopage-img_1(target="_blank",
+                  href="home.html",
+                  style="background-image: url(assets/media/general/preview/01_home.jpg)")
+                h3 Home ver.01
+
+              .col-sm-4.col-xs-12.clearfix.scrollreveal
+                .demopage-preview_item
+                  a.demopage-preview_inner.demopage-img.demopage-img_2(target="_blank",
+                  href="home-2.html",
+                  style="background-image: url(assets/media/general/preview/02_home.jpg)")
+                h3 Home ver.02
+
+              .col-sm-4.col-xs-12.clearfix.scrollreveal
+                .demopage-preview_item
+                  a.demopage-preview_inner.demopage-img.demopage-img_3(target="_blank",
+                  href="blog-main.html",
+                  style="background-image: url(assets/media/general/preview/03_blog-1.jpg)")
+                h3 Blog main ver.01
+
+
+              // Group-2
+              .col-sm-5.col-sm-offset-1.col-xs-12.clearfix.scrollreveal
+                .demopage-preview_item
+                  a.demopage-preview_inner.demopage-img.demopage-img_7(target="_blank",
+                  href="blog-main-2.html",
+                  style="background-image: url(assets/media/general/preview/04_blog-2.jpg)")
+                h3 Blog main ver.02
+
+              .col-sm-5.col-xs-12.clearfix.scrollreveal
+                .demopage-preview_item
+                  a.demopage-preview_inner.demopage-img.demopage-img_10(target="_blank",
+                  href="blog-post.html",
+                  style="background-image: url(assets/media/general/preview/05_blog-post.jpg)")
+                h3  Blog post
+
+              // Group-1
+              .col-sm-4.col-xs-12.clearfix.scrollreveal
+                .demopage-preview_item
+                  a.demopage-preview_inner.demopage-img.demopage-img_1(target="_blank",
+                  href="services.html",
+                  style="background-image: url(assets/media/general/preview/06_services.jpg)")
+                h3 Services
+
+              .col-sm-4.col-xs-12.clearfix.scrollreveal
+                .demopage-preview_item
+                  a.demopage-preview_inner.demopage-img.demopage-img_2(target="_blank",
+                  href="about.html",
+                  style="background-image: url(assets/media/general/preview/07_about.jpg)")
+                h3 About
+
+              .col-sm-4.col-xs-12.clearfix.scrollreveal
+                .demopage-preview_item
+                  a.demopage-preview_inner.demopage-img.demopage-img_3(target="_blank",
+                  href="portfolio.html",
+                  style="background-image: url(assets/media/general/preview/08_works-1.jpg)")
+                h3 Portfolio ver.01
+
+
+              // Group-2
+              .col-sm-5.col-sm-offset-1.col-xs-12.clearfix.scrollreveal
+                .demopage-preview_item
+                  a.demopage-preview_inner.demopage-img.demopage-img_7(target="_blank",
+                  href="portfolio-2.html",
+                  style="background-image: url(assets/media/general/preview/09_works-2.jpg)")
+                h3 Portfolio ver.02
+
+              .col-sm-5.col-xs-12.clearfix.scrollreveal
+                .demopage-preview_item
+                  a.demopage-preview_inner.demopage-img.demopage-img_10(target="_blank",
+                  href="portfolio-3.html",
+                  style="background-image: url(assets/media/general/preview/10_works-3.jpg)")
+                h3 Portfolio ver.03
+
+
+              // Group-2
+              .col-sm-5.col-sm-offset-1.col-xs-12.clearfix.scrollreveal
+                .demopage-preview_item
+                  a.demopage-preview_inner.demopage-img.demopage-img_7(target="_blank",
+                  href="portfolio-details.html",
+                  style="background-image: url(assets/media/general/preview/11_works-details.jpg)")
+                h3 Portfolio details
+
+              .col-sm-5.col-xs-12.clearfix.scrollreveal
+                .demopage-preview_item
+                  a.demopage-preview_inner.demopage-img.demopage-img_10(target="_blank",
+                  href="contact.html",
+                  style="background-image: url(assets/media/general/preview/12_contact.jpg)")
+                h3 Contact
+
+
+
+
+
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='assets/libs/jquery-1.12.4.min.js')
+    script(src='assets/js/custom.js')
+
+    script(src="assets/libs/bootstrap/bootstrap.min.js")
+    script(src="assets/plugins/scrollreveal/scrollreveal.js")
+    script(src="assets/plugins/rendro-easy-pie-chart/waypoints.min.js")

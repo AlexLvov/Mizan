@@ -1,0 +1,39 @@
+extends _template.pug
+
+block head
+  head
+    +head(head.blog)
+
+block content
+
+  +b-title-page('the news blog', 'our thoughts')
+
+
+
+  .container
+    .row
+      .col-md-9
+        .l-main-content.l-main-content_pd-rgt
+          +post-3('780x380/1', '21', 'dec', 'Sam Jones', 'We follow intelligent methodology', 'Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim mini bena quis nostrual exercitationullamco laboris aliqua sed bcea lorem ipsum dolor comoda. Sit amet lorem ipsum dolor sit amet oremps dolor sit amet consectetur adipisic elit sed do eiusmod tempor incididuntut labore et dolore magna aliqua utae enim ad minim  en quis nostrud exercitation ullamco laboris nisi ut aliquip ex consequat duisa')(class="b-post-3")
+          +post-3('780x380/2', '23', 'oct', 'Sam Jones', 'We follow intelligent methodology', 'Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim mini bena quis nostrual exercitationullamco laboris aliqua sed bcea lorem ipsum dolor comoda. Sit amet lorem ipsum dolor sit amet oremps dolor sit amet consectetur adipisic elit sed do eiusmod tempor incididuntut labore et dolore magna aliqua utae enim ad minim  en quis nostrud exercitation ullamco laboris nisi ut aliquip ex consequat duisa')(class="b-post-3")
+          +post-3('780x380/3', '21', 'dec', 'Sam Jones', 'We follow intelligent methodology', 'Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim mini bena quis nostrual exercitationullamco laboris aliqua sed bcea lorem ipsum dolor comoda. Sit amet lorem ipsum dolor sit amet oremps dolor sit amet consectetur adipisic elit sed do eiusmod tempor incididuntut labore et dolore magna aliqua utae enim ad minim  en quis nostrud exercitation ullamco laboris nisi ut aliquip ex consequat duisa')(class="b-post-3")
+          +post-3('780x380/4', '23', 'oct', 'Sam Jones', 'We follow intelligent methodology', 'Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim mini bena quis nostrual exercitationullamco laboris aliqua sed bcea lorem ipsum dolor comoda. Sit amet lorem ipsum dolor sit amet oremps dolor sit amet consectetur adipisic elit sed do eiusmod tempor incididuntut labore et dolore magna aliqua utae enim ad minim  en quis nostrud exercitation ullamco laboris nisi ut aliquip ex consequat duisa')(class="b-post-3")
+
+          ul.pagination.text-center
+            li
+              a(href="#")
+                i.icon.fa.fa-long-arrow-left
+            li
+              a(href="#") 1
+            li.active
+              a(href="#") 2
+            li
+              a(href="#") 3
+            li
+              a(href="#")
+                i.icon.fa.fa-long-arrow-right
+        // end .l-main-content
+
+
+      .col-md-3
+        +sidebar-1()(class="l-sidebar_right")

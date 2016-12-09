@@ -1,0 +1,118 @@
+include ../components/loader/loader
+include ../components/switcher/switcher
+include ../components/headers/headers
+include ../components/head/head
+include ../components/b-title-page/b-title-page
+include ../components/b-social-net/b-social-net
+include ../components/b-typography/b-typography
+include ../components/sidebar/sidebar
+include ../components/b-main-slider/b-main-slider
+include ../components/b-advantages/b-advantages
+include ../components/footer/footer
+include ../components/b-post/b-post
+include ../components/b-pricing/b-pricing
+include ../components/b-progress/b-progress
+include ../components/b-blockquote/b-blockquote
+include ../components/b-brands/b-brands
+include ../components/b-isotope/b-isotope
+include ../components/accordion/accordion
+include ../components/b-info/b-info
+include ../components/b-work/b-work
+include ../components/b-team/b-team
+include ../components/b-awards/b-awards
+include ../components/b-skills/b-skills
+include ../components/b-process/b-process
+include ../components/b-video/b-video
+include ../components/b-services/b-services
+include ../components/b-history/b-history
+
+
+doctype html
+html(lang="en")
+  block head
+
+  body
+    |%=symbols=%
+
+
+    block loader
+      +loader()
+
+    .l-theme.animated-css(data-header="sticky" data-header-top="200" data-canvas="container")
+      +switcher()
+
+
+      block header
+
+        +searchModal()
+
+        +mobileMenu()
+
+        +slideMenu-left()
+
+        +mainNav-5()
+
+
+      block content
+
+
+      block footer
+        +footer
+
+
+    // end layout-theme
+
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+
+
+    // ++++++++++++
+    // MAIN SCRIPTS
+    // ++++++++++++
+
+    script(src='assets/libs/jquery-1.12.4.min.js')
+    script(src='assets/libs/jquery-migrate-1.2.1.js')
+    // Bootstrap
+    script(src="assets/libs/bootstrap/bootstrap.min.js")
+    // User customization
+    script(src='assets/js/custom.js')
+
+
+    //
+    // Color scheme
+    script(src="assets/plugins/switcher/js/dmss.js")
+
+    // Select customization & Color scheme
+    script(src="assets/plugins/bootstrap-select/js/bootstrap-select.min.js")
+
+    // Slider
+    script(src="assets/plugins/owl-carousel/owl.carousel.min.js")
+    script(src="assets/plugins/bxslider/jquery.bxslider.min.js")
+
+    // Pop-up window
+    script(src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js")
+
+    // Headers scripts
+    script(src="assets/plugins/headers/slidebar.js")
+    script(src="assets/plugins/headers/header.js")
+
+    // Mail scripts
+    script(src="assets/plugins/jqBootstrapValidation.js")
+    script(src="assets/plugins/contact_me.js")
+
+    // Video player
+    script(src="assets/plugins/flowplayer/flowplayer.min.js")
+
+    // Filter and sorting images
+    script(src="assets/plugins/isotope/isotope.pkgd.min.js")
+    script(src="assets/plugins/isotope/imagesLoaded.js")
+
+    // Progress numbers
+    script(src="assets/plugins/rendro-easy-pie-chart/jquery.easypiechart.min.js")
+    script(src="assets/plugins/rendro-easy-pie-chart/waypoints.min.js")
+
+    // Animations
+    script(src="assets/plugins/scrollreveal/scrollreveal.min.js")
+
+    block scripts
+

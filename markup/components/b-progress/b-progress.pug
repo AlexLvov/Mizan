@@ -1,0 +1,31 @@
+mixin b-progress-1(items, mod)
+
+  // b-progress standart
+  .section-progress(class!=attributes.class)
+    ul.b-progress-list(class=mod? mod : "").list-unstyled
+      each item in items
+        li.b-progress-list__item.clearfix
+          i.b-progress-list__icon(class=item.icon)
+          span.b-progress-list__percent.js-chart(data-percent=item.number)
+            span.js-percent
+          span.b-progress-list__name #{item.name}
+
+  // end .b-progress
+
+
+mixin b-progress-w-bg-1(items, mod)
+
+  // b-progress width parallax
+  .section-progress.area-bg.parallax
+    .area-bg__inner
+      ul.b-progress-list(class=mod? mod : "").list-unstyled.clearfix
+        each item in items
+          li.b-progress-list__item
+            i.b-progress-list__icon(class=item.icon)
+            span.b-progress-list__percent.js-chart(data-percent=item.number)
+              span.js-percent
+              | +
+            span.b-progress-list__name #{item.name}
+
+  // end .b-progress width parallax
+

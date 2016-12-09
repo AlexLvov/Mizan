@@ -1,0 +1,24 @@
+mixin b-pricing(title, subtitle, number, label, icon, items)
+
+  section.b-pricing(class!=attributes.class)
+    h3.b-pricing__title= title
+    .ui-decor-4
+    if subtitle
+      .b-pricing__subtitle= subtitle
+    .b-pricing-price
+      span.b-pricing-price__number= number
+      span.b-pricing-price__title / Month
+    if label
+      .b-pricing__label= label
+    if icon
+      .b-pricing__icon.bg-primary
+        i.icon(class=icon)
+    a.b-pricing__btn.btn(href="home.html") buy now
+
+    ul.b-pricing__description.list.list-mark-3
+      each item in items
+        li #{item.ds}
+
+  // end .b-pricing
+
+

@@ -1,0 +1,31 @@
+.b-form-contacts__info {
+  margin-top: 52px;
+  margin-bottom: 10px;
+
+  font-size: 12px;
+}
+.b-form-contacts__info-title {
+  font-weight: 400;
+
+  color: #333;
+}
+.b-form-contacts__info-item {
+  display: inline-block;
+  &:after {
+    padding-right: 9px;
+    padding-left: 12px;
+
+    content: '-';
+  }
+  &:last-child:after {
+    content: none;
+  }
+}
+
+.b-form-contacts {
+  padding-right: 22px;
+  padding-left: 22px;
+  .btn {
+    margin-top: 27px;
+  }
+}

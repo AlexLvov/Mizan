@@ -1,0 +1,39 @@
+extends _template.pug
+
+block head
+  head
+    +head(head.blog)
+
+block content
+
+  +b-title-page('the news blog', 'our thoughts')
+
+
+
+  .bg-grey
+    .container
+      .row
+        .col-md-9
+          .l-main-content.l-main-content_pd-rgt
+            .posts-group.js-scroll-content
+              +post-4('360x400/1', 'Sam Jones', 'oct 31, 2016', 'Lorem ipsum dolor sit amet elit sed', 'Corem ipsum dolor sit amet consecter adipsicing elit sed tempor incididunt ut reitad dolore magna aliqua ut enim bena quis nostrual exercitationullamco laboris aliqua sed alorem ipsum dolor comoda. ')(class="b-post-4")
+              +post-4('360x400/2', 'Sam Jones', 'oct 31, 2016', 'don eiusmod tempor incididunt anim', 'Corem ipsum dolor sit amet consecter adipsicing elit sed tempor incididunt ut reitad dolore magna aliqua ut enim bena quis nostrual exercitationullamco laboris aliqua sed alorem ipsum dolor comoda. ')(class="b-post-4")
+              +post-4('360x400/3', 'Sam Jones', 'oct 31, 2016', 'labore etims dolore magna alisua', 'Corem ipsum dolor sit amet consecter adipsicing elit sed tempor incididunt ut reitad dolore magna aliqua ut enim bena quis nostrual exercitationullamco laboris aliqua sed alorem ipsum dolor comoda. ')(class="b-post-4")
+              +post-4('360x400/4', 'Sam Jones', 'oct 31, 2016', 'ad minim veniam quis nostrud exercit', 'Corem ipsum dolor sit amet consecter adipsicing elit sed tempor incididunt ut reitad dolore magna aliqua ut enim bena quis nostrual exercitationullamco laboris aliqua sed alorem ipsum dolor comoda. ')(class="b-post-4")
+              +post-4('360x400/5', 'Sam Jones', 'oct 31, 2016', 'aliquip ex ea commo do consesuat', 'Corem ipsum dolor sit amet consecter adipsicing elit sed tempor incididunt ut reitad dolore magna aliqua ut enim bena quis nostrual exercitationullamco laboris aliqua sed alorem ipsum dolor comoda. ')(class="b-post-4")
+            // end .posts-group
+
+            .text-center.js-scroll-next
+              span.btn.btn-grad.btn-grad_grey
+                span.wrap-btn-grad load more
+
+
+            .posts-group.js-scroll-content
+              +post-4('360x400/1', 'Sam Jones', 'oct 31, 2016', 'Lorem ipsum dolor sit amet elit sed', 'Corem ipsum dolor sit amet consecter adipsicing elit sed tempor incididunt ut reitad dolore magna aliqua ut enim bena quis nostrual exercitationullamco laboris aliqua sed alorem ipsum dolor comoda. ')(class="b-post-4")
+              +post-4('360x400/2', 'Sam Jones', 'oct 31, 2016', 'don eiusmod tempor incididunt anim', 'Corem ipsum dolor sit amet consecter adipsicing elit sed tempor incididunt ut reitad dolore magna aliqua ut enim bena quis nostrual exercitationullamco laboris aliqua sed alorem ipsum dolor comoda. ')(class="b-post-4")
+              +post-4('360x400/3', 'Sam Jones', 'oct 31, 2016', 'labore etims dolore magna alisua', 'Corem ipsum dolor sit amet consecter adipsicing elit sed tempor incididunt ut reitad dolore magna aliqua ut enim bena quis nostrual exercitationullamco laboris aliqua sed alorem ipsum dolor comoda. ')(class="b-post-4")
+              +post-4('360x400/4', 'Sam Jones', 'oct 31, 2016', 'ad minim veniam quis nostrud exercit', 'Corem ipsum dolor sit amet consecter adipsicing elit sed tempor incididunt ut reitad dolore magna aliqua ut enim bena quis nostrual exercitationullamco laboris aliqua sed alorem ipsum dolor comoda. ')(class="b-post-4")
+              +post-4('360x400/5', 'Sam Jones', 'oct 31, 2016', 'aliquip ex ea commo do consesuat', 'Corem ipsum dolor sit amet consecter adipsicing elit sed tempor incididunt ut reitad dolore magna aliqua ut enim bena quis nostrual exercitationullamco laboris aliqua sed alorem ipsum dolor comoda. ')(class="b-post-4")
+            // end .posts-group
+        .col-md-3
+          +sidebar-2()(class="l-sidebar_right")

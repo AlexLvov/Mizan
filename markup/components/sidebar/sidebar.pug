@@ -1,0 +1,209 @@
+mixin widget-post(img, title, date)
+
+  section.post-widget.clearfix(class!=attributes.class)
+    .post-widget__media
+      a(href="blog-post.html")
+        img.img-responsive(src="assets/media/content/posts/97x85/" + img + ".jpg", alt="foto")
+    .post-widget__inner
+      h2.post-widget__title
+        a(href="blog-post.html")= title
+      .post-widget__date
+        time.text-primary(datetime="2017-10-27 15:20")= date
+    // end .widget-post
+
+
+mixin sidebar-1()
+
+  aside.l-sidebar(class!=attributes.class)
+    .widget.widget-searce
+      form.form-sidebar#search-global-form
+        input.form-sidebar__input.form-control(type="text", placeholder="Search keyword ....")
+        button.form-sidebar__btn
+          i.icon.icon-magnifier
+    // end .widget
+
+
+    section.widget.section-sidebar
+      h3.widget-title categories
+      .widget-content
+        ul.widget-list.list.list-mark-4
+          li.widget-list__item
+            a.widget-list__link(href="blog-post.html") Entertainment
+          li.widget-list__item
+            a.widget-list__link(href="blog-post.html") Website Design & Development
+          li.widget-list__item
+            a.widget-list__link(href="blog-post.html") Business & Finance
+          li.widget-list__item
+            a.widget-list__link(href="blog-post.html") Latest Tech Gadgets
+          li.widget-list__item
+            a.widget-list__link(href="blog-post.html") Contact Support
+    // end .widget
+
+
+    section.widget.section-sidebar
+      h3.widget-title latest posts
+      .widget-content
+        +widget-post('1', 'The dynamic growth is now expanded', '10 october 2016')
+        +widget-post('2', 'There was a song titled ‘Love is not Drug’. ', '10 october 2016')
+        +widget-post('3', 'All data centers have gained important', '10 october 2016')
+    // end .widget
+
+    .widget.section-sidebar
+      +b-blockquote-1('Aorem sum dolor sit amet consectetur adipisicing elit sed eiusmod tempor cididunt labore dolore magna aliqua enim.', 'Martin Hans', 'CEO NewTech', '80x80_1')(class="b-blockquote-1 b-blockquote-1_grey")
+
+    section.widget.section-sidebar
+      h3.widget-title popular tags
+      .widget-content
+        ul.list-tags.list-unstyled
+          li.list-tags__item
+            a.list-tags__link(href="blog-post.html") designing
+          li.list-tags__item
+            a.list-tags__link(href="blog-post.html") Development
+          li.list-tags__item
+            a.list-tags__link(href="blog-post.html") photography
+          li.list-tags__item
+            a.list-tags__link(href="blog-post.html") website
+          li.list-tags__item
+            a.list-tags__link(href="blog-post.html") SEO
+          li.list-tags__item
+            a.list-tags__link(href="blog-post.html") ALL PROJECTS
+          li.list-tags__item
+            a.list-tags__link(href="blog-post.html") ecommerce
+          li.list-tags__item
+            a.list-tags__link(href="blog-post.html") responsive
+          li.list-tags__item
+            a.list-tags__link(href="blog-post.html") psd template
+    // end .widget
+
+
+    section.widget.widget-gallery.section-sidebar
+      h3.widget-title instagram feed
+      .widget-content.js-zoom-gallery
+        .widget-gallery__item
+          a.widget-gallery__img.js-zoom-gallery__item(href="assets/media/content/gallery/80x80/1.jpg")
+            img.img-responsive(src="assets/media/content/gallery/80x80/1.jpg", alt="foto")
+        .widget-gallery__item
+          a.widget-gallery__img.js-zoom-gallery__item(href="assets/media/content/gallery/80x80/2.jpg")
+            img.img-responsive(src="assets/media/content/gallery/80x80/2.jpg", alt="foto")
+        .widget-gallery__item
+          a.widget-gallery__img.js-zoom-gallery__item(href="assets/media/content/gallery/80x80/3.jpg")
+            img.img-responsive(src="assets/media/content/gallery/80x80/3.jpg", alt="foto")
+        .widget-gallery__item
+          a.widget-gallery__img.js-zoom-gallery__item(href="assets/media/content/gallery/80x80/4.jpg")
+            img.img-responsive(src="assets/media/content/gallery/80x80/4.jpg", alt="foto")
+        .widget-gallery__item
+          a.widget-gallery__img.js-zoom-gallery__item(href="assets/media/content/gallery/80x80/5.jpg")
+            img.img-responsive(src="assets/media/content/gallery/80x80/5.jpg", alt="foto")
+        .widget-gallery__item
+          a.widget-gallery__img.js-zoom-gallery__item(href="assets/media/content/gallery/80x80/6.jpg")
+            img.img-responsive(src="assets/media/content/gallery/80x80/6.jpg", alt="foto")
+        .widget-gallery__item
+          a.widget-gallery__img.js-zoom-gallery__item(href="assets/media/content/gallery/80x80/7.jpg")
+            img.img-responsive(src="assets/media/content/gallery/80x80/7.jpg", alt="foto")
+        .widget-gallery__item
+          a.widget-gallery__img.js-zoom-gallery__item(href="assets/media/content/gallery/80x80/8.jpg")
+            img.img-responsive(src="assets/media/content/gallery/80x80/8.jpg", alt="foto")
+        .widget-gallery__item
+          a.widget-gallery__img.js-zoom-gallery__item(href="assets/media/content/gallery/80x80/9.jpg")
+            img.img-responsive(src="assets/media/content/gallery/80x80/9.jpg", alt="foto")
+  // end .sidebar
+
+
+
+
+mixin sidebar-2()
+
+  aside.l-sidebar(class!=attributes.class)
+    .widget.widget-searce
+      form.form-sidebar#search-global-form
+        input.form-sidebar__input.form-control(type="text", placeholder="Search keyword ....")
+        button.form-sidebar__btn
+          i.icon.icon-magnifier
+    // end .widget
+
+
+    section.widget.section-sidebar
+      h3.widget-title categories
+      .widget-content
+        ul.widget-list.list.list-mark-4
+          li.widget-list__item
+            a.widget-list__link(href="blog-post.html") Entertainment
+          li.widget-list__item
+            a.widget-list__link(href="blog-post.html") Website Design & Development
+          li.widget-list__item
+            a.widget-list__link(href="blog-post.html") Business & Finance
+          li.widget-list__item
+            a.widget-list__link(href="blog-post.html") Latest Tech Gadgets
+          li.widget-list__item
+            a.widget-list__link(href="blog-post.html") Contact Support
+    // end .widget
+
+
+    section.widget.section-sidebar
+      h3.widget-title latest posts
+      .widget-content
+        +widget-post('1', 'The dynamic growth is now expanded', '10 october 2016')(class="post-widget_mod-a")
+        +widget-post('2', 'There was a song titled ‘Love is not Drug’. ', '10 october 2016')(class="post-widget_mod-a")
+        +widget-post('3', 'All data centers have gained important', '10 october 2016')(class="post-widget_mod-a")
+    // end .widget
+
+    .widget.section-sidebar
+      +b-blockquote-1('Aorem sum dolor sit amet consectetur adipisicing elit sed eiusmod tempor cididunt labore dolore magna aliqua enim.', 'Martin Hans', 'CEO NewTech', '80x80_1')(class="b-blockquote-1")
+
+    section.widget.section-sidebar
+      h3.widget-title popular tags
+      .widget-content
+        ul.list-tags.list-unstyled
+          li.list-tags__item
+            a.list-tags__link(href="blog-post.html") designing
+          li.list-tags__item
+            a.list-tags__link(href="blog-post.html") Development
+          li.list-tags__item
+            a.list-tags__link(href="blog-post.html") photography
+          li.list-tags__item
+            a.list-tags__link(href="blog-post.html") website
+          li.list-tags__item
+            a.list-tags__link(href="blog-post.html") SEO
+          li.list-tags__item
+            a.list-tags__link(href="blog-post.html") ALL PROJECTS
+          li.list-tags__item
+            a.list-tags__link(href="blog-post.html") ecommerce
+          li.list-tags__item
+            a.list-tags__link(href="blog-post.html") responsive
+          li.list-tags__item
+            a.list-tags__link(href="blog-post.html") psd template
+    // end .widget
+
+
+    section.widget.widget-gallery.section-sidebar
+      h3.widget-title instagram feed
+      .widget-content.js-zoom-gallery
+        .widget-gallery__item
+          a.widget-gallery__img.js-zoom-gallery__item(href="assets/media/content/gallery/80x80/1.jpg")
+            img.img-responsive(src="assets/media/content/gallery/80x80/1.jpg", alt="foto")
+        .widget-gallery__item
+          a.widget-gallery__img.js-zoom-gallery__item(href="assets/media/content/gallery/80x80/2.jpg")
+            img.img-responsive(src="assets/media/content/gallery/80x80/2.jpg", alt="foto")
+        .widget-gallery__item
+          a.widget-gallery__img.js-zoom-gallery__item(href="assets/media/content/gallery/80x80/3.jpg")
+            img.img-responsive(src="assets/media/content/gallery/80x80/3.jpg", alt="foto")
+        .widget-gallery__item
+          a.widget-gallery__img.js-zoom-gallery__item(href="assets/media/content/gallery/80x80/4.jpg")
+            img.img-responsive(src="assets/media/content/gallery/80x80/4.jpg", alt="foto")
+        .widget-gallery__item
+          a.widget-gallery__img.js-zoom-gallery__item(href="assets/media/content/gallery/80x80/5.jpg")
+            img.img-responsive(src="assets/media/content/gallery/80x80/5.jpg", alt="foto")
+        .widget-gallery__item
+          a.widget-gallery__img.js-zoom-gallery__item(href="assets/media/content/gallery/80x80/6.jpg")
+            img.img-responsive(src="assets/media/content/gallery/80x80/6.jpg", alt="foto")
+        .widget-gallery__item
+          a.widget-gallery__img.js-zoom-gallery__item(href="assets/media/content/gallery/80x80/7.jpg")
+            img.img-responsive(src="assets/media/content/gallery/80x80/7.jpg", alt="foto")
+        .widget-gallery__item
+          a.widget-gallery__img.js-zoom-gallery__item(href="assets/media/content/gallery/80x80/8.jpg")
+            img.img-responsive(src="assets/media/content/gallery/80x80/8.jpg", alt="foto")
+        .widget-gallery__item
+          a.widget-gallery__img.js-zoom-gallery__item(href="assets/media/content/gallery/80x80/9.jpg")
+            img.img-responsive(src="assets/media/content/gallery/80x80/9.jpg", alt="foto")
+  // end .sidebar
+

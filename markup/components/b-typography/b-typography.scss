@@ -1,0 +1,89 @@
+/* ======= TYPOGRAPHY ======= */
+
+
+.typography-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.typography-section-border {
+  border-bottom: 4px double #eee;
+}
+.typography-section__inner {
+  margin-top: 67px;
+}
+.typography-title-number {
+  padding-left: 85px;
+
+  font-size: 16px;
+  line-height: 1;
+
+  vertical-align: middle;
+
+  color: #999;
+}
+.typography__highlights {
+  margin-bottom: 23px;
+}
+.typography-dropcap {
+  margin-top: 44px;
+}
+.typography-blockquote {
+  margin-top: 90px;
+}
+
+.typography-page {
+  .typography-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    font-weight: 400;
+
+    color: #777;
+  }
+  .list {
+    margin-bottom: 45px;
+  }
+  .checkbox-group,.label-group {
+    margin-left: 20px;
+  }
+  .checkbox-group {
+    margin-bottom: 50px;
+  }
+  .ui-form {
+    margin-bottom: 80px;
+  }
+  .alert-group {
+    margin-bottom: 55px;
+  }
+  .table {
+    margin-bottom: 65px;
+  }
+  .typography-btn-group {
+    .btn {
+      margin-right: 20px !important;
+      margin-bottom: 40px;
+
+      vertical-align: bottom;
+    }
+  }
+  .typography-last-elem {
+    margin-bottom: 0;
+  }
+}
+
+.table_primary-headings h1,.table_primary-headings h2 {
+  margin-bottom: 44px;
+
+  line-height: 1;
+
+  vertical-align: middle;
+}
+.table_primary-headings h3,.table_primary-headings h4,.table_primary-headings h5,.table_primary-headings h6 {
+  margin-bottom: 34px;
+}
+
+
+.wrap-title {
+  margin-bottom: 56px;
+}

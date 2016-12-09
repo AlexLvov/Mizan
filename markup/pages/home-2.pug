@@ -1,0 +1,211 @@
+extends _template.pug
+
+
+block head
+  head
+    +head(head.home)
+
+  - pageHome = true;
+
+
+block content
+
+
+  +b-main-slider-2()
+
+
+  .section-area
+    .container
+      .row
+        .col-xs-12
+          +b-advantages-3()
+  // end .section-area
+
+
+  .section-progress.section-default
+    .container
+      .row
+        .col-sm-10.col-sm-offset-1
+          .text-center
+            h2.ui-title-block-2 We follow intelligent methodology to<br> deliver awesome solutions!
+            p Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim minim beniaps quis nostrual exercitationullamco laboris aliqua sed bcea lorem ipsum dolor comoda. Sit amet lorem ipsum dolor sit amet orem psum dolor sit amet consectetur adipisic elit do eiusmod tempor incididuntut labore et dolore magna aliqua utae enim ad minim.
+            h3.ui-title-inner we deserve some cool statistics !
+            +b-progress-1([
+              {'icon': "icon-screen-desktop", 'number': '561', 'name': 'projects'},
+              {'icon': "icon-users", 'number': '160', 'name': 'clients'},
+              {'icon': "icon-trophy", 'number': '204', 'name': 'awards'},
+              {'icon': "icon-star", 'number': '285', 'name': 'employes'},
+              {'icon': "icon-cup", 'number': '903', 'name': 'coffees'}])
+  // end .section-progress
+
+
+  +b-work-2()
+
+
+  +b-skills()
+
+
+  +b-process()
+
+
+  section.section-default
+    .container
+      .row
+        .col-sm-11
+          .ui-subtitle-block Who is Mizan
+          h2.ui-title-block About Us
+          .ui-decor-1.bg-primary
+          .block-paragraphs
+            p Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim minim beniaps quis nostrual exercitationullamco laboris sed bcea lorem ipsum dolor comoda lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt.
+
+
+      .row
+        .col-md-6
+          ul.nav.nav-tabs
+            li.active
+              a(href="#tabs-1" data-toggle="tab") history
+            li
+              a(href="#tabs-2" data-toggle="tab") mission
+            li
+              a(href="#tabs-3" data-toggle="tab") why us
+          // end .nav-tabs
+
+
+          .tab-content
+            .tab-pane.fade.in.active#tabs-1
+              p Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididuntut ret dolore magna aliqua ut enim minim beniaps quis nostrual exercitation ulamco laborsa sed bcea lorem ipsum dolor comoda.
+              p Sit amet lorem ipsum dolor sit amet orem ipsum dolor sit amet consectetur adipisice elit  do eiusmod tempor incididuntut labore et dolre sed magna aliqua utae enimad minim sed do eiusmod incidient ut venquis.
+              a.btn.btn-grad(href="about.html")
+                span.wrap-btn-grad learn more
+            .tab-pane.fade#tabs-2
+              p Sit amet lorem ipsum dolor sit amet orem ipsum dolor sit amet consectetur adipisice elit  do eiusmod tempor incididuntut labore et dolre sed magna aliqua utae enimad minim sed do eiusmod incidient ut venquis.
+              a.btn.btn-grad(href="about.html")
+                span.wrap-btn-grad learn more
+            .tab-pane.fade#tabs-3
+              p Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididuntut ret dolore magna aliqua ut enim minim beniaps quis nostrual exercitation ulamco laborsa sed bcea lorem ipsum dolor comoda.
+              a.btn.btn-grad(href="about.html")
+                span.wrap-btn-grad learn more
+          // end .tab-content
+
+        .col-md-6
+          +b-video('poster-1')
+  // end .section-default
+
+
+  section.section-default.bg-grey-2
+    .container
+      .row
+        .col-sm-11
+          .ui-subtitle-block The Works We Did
+          h2.ui-title-block Things We Do
+          .ui-decor-1.ui-decor-1_white.bg-primary
+          .block-paragraphs
+            p Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim minim beniaps quis nostrual exercitationullamco laboris sed bcea lorem ipsum dolor comoda lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt.
+  // end .section-default
+
+
+  .section-area
+    .block-table
+      .block-table__cell.col-sm-6
+        +b-advantages-2('flaticon-hand', 'User Interaction', 'Corem ipsum dolor sit amet consecter adipsicing elit sed usm temp incidid dolore magna aliqua ut enim minim beniaps quis nostrual ex citationullamco sed bcea ipsum dolor amet consectetur adipisicing elit.', '')(class="b-advantages-2 b-advantages-2_mod-a b-advantages-2_left")
+      .block-table__cell.col-sm-6
+        img.b-advantages-2__img(src="assets/media/components/b-advantages/960x350_1.jpg", alt="foto")
+
+    .block-table
+      .block-table__cell.col-sm-6
+        img.b-advantages-2__img(src="assets/media/components/b-advantages/960x350_2.jpg", alt="foto")
+      .block-table__cell.col-sm-6
+        +b-advantages-2('flaticon-writing', 'Web Development', 'Corem ipsum dolor sit amet consecter adipsicing elit sed usm temp incidid dolore magna aliqua ut enim minim beniaps quis nostrual ex citationullamco sed bcea ipsum dolor amet consectetur adipisicing elit.', '')(class="b-advantages-2 b-advantages-2_mod-a")
+
+    .block-table
+      .block-table__cell.col-sm-6
+        +b-advantages-2('flaticon-technology', 'startup ideas', 'Corem ipsum dolor sit amet consecter adipsicing elit sed usm temp incidid dolore magna aliqua ut enim minim beniaps quis nostrual ex citationullamco sed bcea ipsum dolor amet consectetur adipisicing elit.', '')(class="b-advantages-2 b-advantages-2_mod-a b-advantages-2_left")
+      .block-table__cell.col-sm-6
+        img.b-advantages-2__img(src="assets/media/components/b-advantages/960x350_3.jpg", alt="foto")
+
+    .block-table
+      .block-table__cell.col-sm-6
+        img.b-advantages-2__img(src="assets/media/components/b-advantages/960x350_4.jpg", alt="foto")
+      .block-table__cell.col-sm-6
+        +b-advantages-2('flaticon-business', 'search engine ranking', 'Corem ipsum dolor sit amet consecter adipsicing elit sed usm temp incidid dolore magna aliqua ut enim minim beniaps quis nostrual ex citationullamco sed bcea ipsum dolor amet consectetur adipisicing elit.', '')(class="b-advantages-2 b-advantages-2_mod-a")
+  // end .section-area
+
+
+  +b-info()
+
+
+  section.section-default
+    .container
+      .row
+        .col-sm-11
+          .ui-subtitle-block The Works We Did
+          h2.ui-title-block The Pricing
+          .ui-decor-1.bg-primary
+          .block-paragraphs
+            p Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim minim beniaps quis nostrual exercitationullamco laboris sed bcea lorem ipsum dolor comoda lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt.
+      .row
+        .col-xs-12
+          +b-pricing('standard', '', '29', '', '',
+          ([{'ds' : 'Aorem ipsum dolor'},
+            {'ds' : 'Tempor incididunts lab dolore'},
+            {'ds' : 'Veniam nostrud exercitation'},
+            {'ds' : 'Eorem ipsum dolor sit'}]))(class="bg-grey-2")
+          +b-pricing('premium', '', '69', '', '',
+          ([{'ds' : 'Aorem ipsum dolor'},
+            {'ds' : 'Tempor incididunts lab dolore'},
+            {'ds' : 'Veniam nostrud exercitation'},
+            {'ds' : 'Eorem ipsum dolor sit'}]))(class="active")
+          +b-pricing('ultimate', '', '99', '', '',
+          ([{'ds' : 'Aorem ipsum dolor'},
+            {'ds' : 'Tempor incididunts lab dolore'},
+            {'ds' : 'Veniam nostrud exercitation'},
+            {'ds' : 'Eorem ipsum dolor sit'}]))(class="bg-grey-2")
+  // end .section-default
+
+
+  .b-blockquote-carousel.area-bg.area-bg_grad.area-bg_op_90.parallax(style="background-image: url(assets/media/content/bg/bg-3.jpg);")
+    .area-bg__inner
+      .container
+        .row
+          .col-xs-12
+            .text-center
+
+              #bx-pager_img
+                a(data-slide-index="0" href="")
+                  img.img-responsive(src="assets/media/content/review-carousel/thumb/1.jpg", alt="thumb")
+                a(data-slide-index="1" href="")
+                  img(src="assets/media/content/review-carousel/thumb/2.jpg", alt="thumb")
+                a(data-slide-index="2" href="")
+                  img(src="assets/media/content/review-carousel/thumb/3.jpg", alt="thumb")
+
+              .ui-decor-4
+
+              ul.bxslider_w_img
+                li
+                  .row
+                    .col-sm-10.col-sm-offset-1
+                      +b-blockquote-2('Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.', 'Martin Hans', 'CEO NewTech Ltd.')(class="b-blockquote-2 b-blockquote-2_white")
+                li
+                  .row
+                    .col-sm-10.col-sm-offset-1
+                      +b-blockquote-2('Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.', 'Martin Hans', 'CEO NewTech Ltd.')(class="b-blockquote-2 b-blockquote-2_white")
+                li
+                  .row
+                    .col-sm-10.col-sm-offset-1
+                      +b-blockquote-2('Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.', 'Martin Hans', 'CEO NewTech Ltd.')(class="b-blockquote-2 b-blockquote-2_white")
+  // end .b-blockquote-carousel
+
+
+  .section-brands
+    .container
+      .row
+        .col-xs-12
+          +b-brands()
+  // end .section-brands
+
+
+block scripts
+
+  // Main slider
+  script(src="assets/plugins/slider-pro/jquery.sliderPro.min.js")
+

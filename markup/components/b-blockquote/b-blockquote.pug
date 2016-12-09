@@ -1,0 +1,64 @@
+mixin b-blockquote-post(content, author, category)
+
+  .b-blockquote-post.b-blockquote(class!=attributes.class)
+    blockquote
+      p= content
+      cite.b-blockquote__cite(title="Blockquote Title")
+        span.b-blockquote__author= author
+        span.b-blockquote__category= category
+
+
+mixin b-blockquote-1(content, author, category, img)
+
+  .b-blockquote(class!=attributes.class)
+    .b-blockquote__img
+      img(src="assets/media/components/b-blockquote/" + img + ".jpg", alt="foto")
+    blockquote
+      p= content
+      cite.b-blockquote__cite(title="Blockquote Title")
+        span.b-blockquote__author= author
+        span.b-blockquote__category= category
+
+  // end .b-blockquote
+
+
+mixin b-blockquote-2(content, author, category)
+
+  blockquote.b-blockquote(class!=attributes.class)
+    p= content
+    cite.b-blockquote__cite(title="Blockquote Title")
+      span.b-blockquote__author.color-primary= author
+      span.b-blockquote__category= category
+
+  // end .b-blockquote
+
+
+mixin b-blockquote-3(content, author)
+
+  blockquote.b-blockquote(class!=attributes.class)
+    cite.b-blockquote__cite(title="Blockquote Title")
+      span.b-blockquote__author= author
+    p= content
+
+  // end .b-blockquote
+
+
+
+mixin b-blockquote-4(content, author, category, img)
+
+  .b-blockquote(class!=attributes.class)
+    .b-blockquote__img
+      img(src="assets/media/components/b-blockquote/" + img + ".jpg", alt="foto")
+    blockquote
+      p= content
+      cite.b-blockquote__cite(title="Blockquote Title")
+        span.b-blockquote__author= author
+        span.b-blockquote__category.text-primary= category
+    ul.rating.list-inline
+      li.rating__star.fa.fa-star
+      li.rating__star.fa.fa-star
+      li.rating__star.fa.fa-star
+      li.rating__star.fa.fa-star
+      li.rating__star.fa.fa-star-half-o
+
+  // end .b-blockquote

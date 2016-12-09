@@ -1,0 +1,19 @@
+extends _template.pug
+
+block head
+  head
+    +head(head.blog)
+
+block content
+
+  +b-title-page('the news blog', 'post details')
+
+  .container
+    .row
+      .col-md-9
+        .l-main-content.l-main-content_pd-rgt
+          +post-full()
+
+      .col-md-3
+        +sidebar-1()(class="l-sidebar_right")
+  // end .container

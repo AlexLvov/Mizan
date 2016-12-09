@@ -1,0 +1,106 @@
+mixin b-work()
+
+  article.b-work.section-default.section-default_first
+    .container
+      .row
+        .col-xs-12
+          .text-center
+            .ui-subtitle-block Very Delightful Project
+            h2.ui-title-block The Shoutgun
+            .ui-decor-3.bg-primary
+            p Aorem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim beniaps quis nostrual exercitationullamco laboris sed bcea lorem ipsum dolor comoda lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna.
+
+            .b-work-description
+              .b-work-description__item
+                .b-work-description__name Client Name
+                .b-work-description__info ShoutGun Son Media
+              .b-work-description__item
+                .b-work-description__name Launch On
+                .b-work-description__info 25 December 2017
+              .b-work-description__item
+                .b-work-description__name Skills Used
+                .b-work-description__info Photoshop / HTML /  PHP
+              .b-work-description__item
+                .b-work-description__name Share This
+                .b-work-description__info
+                  +social-net([
+                    {'href': "twitter", 'icon': 'twitter'},
+                    {'href': "facebook", 'icon': 'facebook'},
+                    {'href': "pinterest", 'icon': 'pinterest-p'},
+                    {'href': "plus.google", 'icon': 'google-plus'}], '')(class="")
+
+    .container-fluid
+      .b-work-carousel.owl-carousel.owl-theme.enable-owl-carousel(
+        data-min480="1"
+        data-min768="2"
+        data-min992="2"
+        data-min1200="2"
+        data-pagination="true"
+        data-navigation="false"
+        data-auto-play="4000"
+        data-stop-on-hover="true")
+
+        .b-work-carousel__item
+          img.img-responsive(src="assets/media/content/gallery/700x490/1.jpg", alt="foto")
+        .b-work-carousel__item
+          img.img-responsive(src="assets/media/content/gallery/700x490/2.jpg", alt="foto")
+        .b-work-carousel__item
+          img.img-responsive(src="assets/media/content/gallery/700x490/1.jpg", alt="foto")
+        .b-work-carousel__item
+          img.img-responsive(src="assets/media/content/gallery/700x490/2.jpg", alt="foto")
+        .b-work-carousel__item
+          img.img-responsive(src="assets/media/content/gallery/700x490/1.jpg", alt="foto")
+        .b-work-carousel__item
+          img.img-responsive(src="assets/media/content/gallery/700x490/2.jpg", alt="foto")
+      // end slider
+
+    .container
+      .row
+        .col-xs-12
+          .text-center
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+            p Wquasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia.
+            a.btn.btn-default(href="portfolio-details.html") live demo
+
+  // end .b-work
+
+
+mixin b-work-2()
+
+  article.b-work-2.bg-grey-2
+    .container
+      .row
+        .col-sm-11
+          .ui-subtitle-block The Works We Did
+          h2.ui-title-block Latest Works
+          .ui-decor-1.ui-decor-1_white.bg-primary
+      .row
+        .col-md-4
+          h3.ui-title-inner Mizan Development
+          p Corem ipsum dolor sit amet consecter adipsicing elit sed usa tempor incididunt ut reitad dolore magna aliqua ut enim min beniaps quis nostrual exercitation.
+          .ui-decor-4
+          .b-work-2__description Launch Date:
+            span.b-work-2__description-info 25 December 2016
+          .b-work-2__description Technology:
+            span.b-work-2__description-info Adobe Photoshop, Wordpress
+        .col-md-8
+          .b-work-2__slider
+            .bxslider_w_numbers
+              img(src="assets/media/content/gallery/works/1.png", alt="foto")
+              img(src="assets/media/content/gallery/works/1.png", alt="foto")
+              img(src="assets/media/content/gallery/works/1.png", alt="foto")
+              img(src="assets/media/content/gallery/works/1.png", alt="foto")
+              img(src="assets/media/content/gallery/works/1.png", alt="foto")
+              img(src="assets/media/content/gallery/works/1.png", alt="foto")
+              img(src="assets/media/content/gallery/works/1.png", alt="foto")
+
+            #bx-pager
+              a(data-slide-index="0" href="") 01
+              a(data-slide-index="1" href="") 02
+              a(data-slide-index="2" href="") 03
+              a(data-slide-index="3" href="") 04
+              a(data-slide-index="4" href="") 05
+              a(data-slide-index="5" href="") 06
+              a(data-slide-index="6" href="") 07
+
+  // end .b-work

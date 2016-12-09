@@ -1,0 +1,13 @@
+.section-brands {
+  padding-top: 70px;
+  padding-bottom: 33px;
+}
+
+.b-brands {
+  margin-right: auto;
+  margin-left: auto;
+  &__item {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

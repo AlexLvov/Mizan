@@ -1,0 +1,28 @@
+.b-tabs-nav {
+  li {
+    float: none;
+    > a {
+      padding-right: 20px;
+
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1;
+
+      cursor: pointer;
+      transition: all .3s;
+      text-transform: uppercase;
+
+      opacity: .5;
+      color: white;
+      border-right: 4px solid transparent;
+      &:hover {
+        opacity: 1;
+        border-right: 1px solid #fff;
+      }
+    }
+    &.active > a {
+      opacity: 1;
+      border-right: 1px solid #fff;
+    }
+  }
+}

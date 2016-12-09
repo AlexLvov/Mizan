@@ -1,0 +1,89 @@
+extends _template.pug
+
+block head
+  head
+    +head(head.contact)
+
+block content
+
+  +b-title-page('contact us', 'the mizan')
+
+  .section-contact
+    .container
+      .row
+        .col-sm-10.col-sm-offset-1
+          .text-center
+            h2.ui-title-block We always
+              i.icon.fa.fa-smile-o
+              |  to help
+            .ui-decor-3.bg-primary
+            p Aorem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim beniaps quis nostrual exercitationullamco laboris sed bcea lorem ipsum dolor comoda lorem ipsum dolor sit amet consectetur adipisicing elit
+
+      .row
+        .col-sm-6
+          section.b-contacts.b-contacts_left
+            h3.b-contacts__title london office
+            .b-contacts__info
+              span.b-contacts__info-name Address:
+              |  68 Landsriver St, California 22066
+            .b-contacts__info
+              span.b-contacts__info-name Phone:
+              |  + 01 234  5678 9
+            .b-contacts__info
+              span.b-contacts__info-name Email:
+              a(href="mailto:support.uk@mizan.com")  support.uk [at] mizan.com
+            a.b-contacts__link(href="contact.html") view map
+          // end .b-contacts
+
+        .col-sm-6
+          section.b-contacts
+            h3.b-contacts__title Newyork office
+            .b-contacts__info
+              span.b-contacts__info-name Address:
+              |  68 Landsriver St, California 22066
+            .b-contacts__info
+              span.b-contacts__info-name Phone:
+              |  + 01 234  5678 9
+            .b-contacts__info
+              span.b-contacts__info-name Email:
+              a(href="mailto:support.uk@mizan.com")  support.uk [at] mizan.com
+            a.b-contacts__link(href="contact.html") view map
+          // end .b-contacts
+  // end .section-contact
+
+  .map#map
+
+  .section-default
+    .container
+      .row
+        .col-sm-10.col-sm-offset-1
+          #success
+          form.b-form-contacts.ui-form#contactForm(action="#", method="post")
+            .row
+              .col-xs-12
+                textarea.form-control#user-message(rows="5", placeholder="message here ...", required)
+            .row
+              .col-xs-12
+                input.form-control#user-subject(type="text", name="user-subject", placeholder="subject line")
+            .row
+              .col-md-6
+                input.form-control#user-name(type="text", name="user-name", placeholder="your name", required)
+              .col-md-6
+                input.form-control#user-email(type="email", name="user-email", placeholder="your email")
+            .row
+              .col-xs-12
+                .text-center
+                  button.btn.btn-grad-2 send comment
+            .b-form-contacts__info.text-center
+              .b-form-contacts__info-title Our Working hours are following.
+              .b-form-contacts__info-item Monday to Friday : 09 . 00 am  to  06 . 00 pm
+              .b-form-contacts__info-item Saturday : 10 .00 am  to  05 .00 pm
+          // end .b-form-contact
+  // end .section-default
+
+block scripts
+  // User map
+  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqQ_bBw186KJnMcRByvn5ffZueg88wp1E")
+  // Maps customization
+  script(src='assets/js/map-custom.js')
+

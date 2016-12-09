@@ -1,0 +1,41 @@
+mixin b-title-page(title, info)
+  .section-title-page.area-bg.area-bg_op_90.area-bg_grad.parallax
+    .area-bg__inner
+      .container
+        .row
+          .col-xs-12
+            h1.b-title-page= title
+            .b-title-page__info= info
+
+  // end .b-title-page
+
+
+mixin b-title-page-2(title, info, firstLink, hrefFirstLink, lastLink)
+  .section-title-page.area-bg.parallax(data-stellar-background-ratio="0.4", data-stellar-vertical-offset="0")
+    .area-bg__inner
+      .container
+        .row
+          .col-xs-12
+            h1.b-title-page= title
+            .b-title-page__info= info
+            ol.breadcrumb
+              li
+                a(href="home.html") home
+              li
+                a(href= hrefFirstLink + ".html")= firstLink
+              li.active= lastLink
+            // end breadcrumb
+            .ui-decor-1
+
+  // end .b-title-page
+
+
+mixin index-title-page()
+  .section-title-page.area-bg.area-bg_op_90.area-bg_grad.parallax
+    .area-bg__inner
+      .container
+        .row
+          .col-xs-12
+            h1.b-title-page PREMIUM HTML DESIGN TEMPLATE
+  // end .title-page
+

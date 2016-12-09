@@ -1,0 +1,173 @@
+/* ======= FOOTER ======= */
+
+
+.footer {
+  line-height: 1.7143;
+
+  color: #999;
+  &__main {
+    padding-top: 95px;
+    padding-bottom: 72px;
+
+    background-color: #1a1b20;
+  }
+  &__info {
+    margin-right: 20px;
+  }
+  .copyright {
+    background-color: #0e0e11;
+    &__inner {
+      position: relative;
+
+      padding: 32px 0 37px;
+    }
+    .scroll-top {
+      position: absolute;
+      top: -30px;
+      right: 0;
+
+      width: 60px;
+      height: 60px;
+      padding-top: 16px;
+
+      font-size: 20px;
+      font-weight: 400;
+
+      cursor: pointer;
+      transition: all .3s;
+      text-align: center;
+
+      color: #fff;
+      border-radius: 30px;
+      background-color: #333;
+      &:hover {
+        padding-top: 10px;
+
+        text-shadow: 0 3px 0 #000, 0 4px 2px #fff;
+      }
+    }
+  }
+  .footer-section {
+    padding-top: 5px;
+    &_contact {
+      background-image: url('../media/components/footer/bg-1.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &_links {
+      padding-left: 43px;
+    }
+    &__title {
+      position: relative;
+
+      margin-top: 22px;
+      margin-bottom: 15px;
+
+      font-size: 14px;
+
+      letter-spacing: .05em;
+      text-transform: uppercase;
+
+      color: white;
+      &_decor {
+        &:after {
+          display: block;
+
+          width: 20px;
+          height: 3px;
+          margin-top: 10px;
+          margin-bottom: 30px;
+
+          content: '';
+        }
+      }
+    }
+  }
+  .footer-form {
+    position: relative;
+
+    margin-top: 17px;
+    padding-bottom: 10px;
+    &__info {
+      color: #ccc;
+    }
+    &__input {
+      width: 100%;
+      margin-bottom: 13px;
+
+      text-align: center;
+
+      border-color: #999;
+      background-color: transparent;
+
+      @include placeholder {
+        color: #999;
+      }
+    }
+    &__btn {
+      padding-top: 9px;
+      padding-bottom: 9px;
+
+      font-size: 10px;
+    }
+  }
+  .social-net {
+    margin-top: 40px;
+    margin-left: 0;
+    &__item {
+      margin: 0 8px;
+    }
+  }
+}
+
+.footer-logo {
+  margin-bottom: 25px;
+  &__link {
+    display: inline-block;
+  }
+  &__slogan {
+    display: inline-block;
+
+    width: 150px;
+    margin-left: 10px;
+
+    font: 400 12px/1.2 Montserrat;
+
+    text-transform: uppercase;
+
+    color: #eee;;
+  }
+}
+
+.footer-list {
+  .footer-list__item {
+    margin-bottom: 18px;
+  }
+  &__link {
+    color: #999;
+  }
+}
+
+.footer-social-net {
+  margin-bottom: 28px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #333;
+  &:last-child {
+    padding-bottom: 0;
+
+    border-bottom: none;
+  }
+  &__time {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+    font: 400 11px Montserrat;
+
+    text-transform: uppercase;
+
+    color: #666666;
+  }
+}

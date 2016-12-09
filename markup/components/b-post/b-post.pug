@@ -1,0 +1,254 @@
+mixin post-sm(img, title, content)
+  section.b-post-sm.b-post-sm-1(class!=attributes.class).clearfix
+
+    .entry-media
+      a.js-zoom-images(href="assets/media/content/posts/" + img + ".jpg")
+        img.img-responsive(src="assets/media/content/posts/" + img + ".jpg", alt="Foto")
+
+    .entry-main
+      .entry-header
+        h2.entry-title.entry-title_spacing.ui-title-inner
+          a(href="blog-post.html")= title
+      .entry-content
+        p= content
+
+  // end .post
+
+
+mixin post-1(img, title, content, author, date)
+  section.b-post(class!=attributes.class).clearfix
+
+    if img
+      .entry-media
+        a.js-zoom-images(href="assets/media/content/posts/" + img + ".jpg")
+          img.img-responsive(src="assets/media/content/posts/" + img + ".jpg", alt="Foto")
+
+    .entry-main
+      .entry-header
+        if author
+          .entry-meta
+            span.entry-meta__item
+              a.entry-meta__link(href="blog-main.html")= author
+            span.entry-meta__item
+              a.entry-meta__link(href="blog-main.html")= date
+        h2.entry-title
+          a(href="blog-post.html")= title
+      if content
+        .entry-content
+          p= content
+
+  // end .post
+
+
+mixin post-2(date, month, title, content, author)
+  section.b-post(class!=attributes.class).clearfix
+
+    .entry-date
+      span.entry-date__number.bg-second= date
+      span.entry-date__month= month
+
+    .entry-main
+      .entry-header
+        if author
+          .entry-meta
+            span.entry-meta__item
+              a.entry-meta__link.text-primary(href="blog-main.html")= author
+        h2.entry-title
+          a(href="blog-post.html")= title
+      if content
+        .entry-content
+          p= content
+
+  // end .post
+
+
+mixin post-3(img, date, month, author, title, content)
+  article.b-post(class!=attributes.class).clearfix
+    .entry-media
+      a.js-zoom-images(href="assets/media/content/posts/" + img + ".jpg")
+        img.img-responsive(src="assets/media/content/posts/" + img + ".jpg", alt="Foto")
+
+      .entry-date.bg-second
+        span.entry-date__number= date
+        span.entry-date__month= month
+
+    .entry-main
+      .entry-header
+        if author
+          .entry-meta
+            span.entry-meta__item written by
+              a.entry-meta__link.text-primary(href="blog-main.html")= author
+        h2.entry-title
+          a(href="blog-post.html")= title
+      if content
+        .entry-content
+          p= content
+      .entry-footer
+        a.btn.btn-grad(href="b-post.html")
+          span.wrap-btn-grad read more
+        a.entry-footer__links(href="home.html")
+          i.icon.icon-share.text-primary
+          | Share This
+
+  // end .post
+
+
+mixin post-4(img, author, date, title, content)
+  article.b-post(class!=attributes.class).clearfix
+    .entry-media
+      a.js-zoom-images(href="assets/media/content/posts/" + img + ".jpg")
+        img.img-responsive(src="assets/media/content/posts/" + img + ".jpg", alt="Foto")
+
+    .entry-main
+      .entry-header
+        if author
+          .entry-meta
+            span.entry-meta__item
+              a.entry-meta__link.text-primary(href="blog-main.html")= author
+            span.entry-meta__item
+              a.entry-meta__link.text-second(href="blog-main.html")= date
+          a.entry-header__links(href="home.html")
+            i.icon.icon-share
+      h2.entry-title
+        a(href="blog-post.html")= title
+      if content
+        .entry-content
+          p= content
+
+  // end .post
+
+
+
+mixin post-5(img, title, content)
+  section.b-post(class!=attributes.class).clearfix
+
+    if img
+      .entry-media
+        a.js-zoom-images(href="assets/media/content/posts/360x280/" + img + ".jpg")
+          img.img-responsive(src="assets/media/content/posts/360x280/" + img + ".jpg", alt="Foto")
+
+    .entry-main
+      .entry-header
+        h2.entry-title.ui-title-inner-2
+          a(href="blog-post.html")= title
+      if content
+        .entry-content
+          p= content
+      .entry-footer
+        a.btn.btn-default.btn-sm(href="b-post.html") more info
+
+  // end .post
+
+
+mixin post-full()
+  article.b-post.b-post-3.b-post-full.clearfix
+
+    .entry-media
+      a.js-zoom-images(href="assets/media/content/posts/780x410/1.jpg")
+        img.img-responsive(src="assets/media/content/posts/780x410/1.jpg", alt="Foto")
+
+
+      .entry-date.bg-second
+        span.entry-date__number 21
+        span.entry-date__month dec
+
+    .entry-main
+      .entry-header
+        .entry-meta
+          span.entry-meta__item written by
+            a.entry-meta__link.text-primary(href="blog-main.html") Sam Jones
+        h2.entry-title
+          a(href="blog-post.html") We follow intelligent methodology
+      .entry-content
+        p Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim mini bena quis nostrual exercitationullamco laboris aliqua sed bcea lorem ipsum dolor comoda. Sit amet lorem ipsum dolor sit amet oremps dolor sit amet consectetur adipisic elit sed do eiusmod tempor incididuntut labore et dolore magna aliqua utae enim ad minim  en quis nostrud exercitation ullamco laboris nisi ut aliquip ex consequat duisa.
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex baea commodo consequat. Duis aute irure dolo repre enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore mque laudantium totam rem aperiam eaque ipsa quae ab illo inventore.
+
+
+        +b-blockquote-post('Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat.', 'Martin Hans', 'CEO NewTech Ltd.')
+
+        p Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim mini bena quis nostrual exercitationullamco laboris aliqua sed bcea lorem ipsum dolor comoda. Sit amet lorem ipsum dolor sit amet oremps dolor sit amet consectetur adipisic elit sed do eiusmod tempor incididuntut labore et dolore magna aliqua utae enim ad minim  en quis nostrud exercitation ullamco laboris nisi ut aliquip ex consequat duisa.
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex baea commodo consequat. Duis aute irure dolo repre enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+      .entry-footer
+        .post-tags
+          .post-tags__title tags:
+          a.post-tags__item(href="blog-post.html") office
+          | ,
+          a.post-tags__item(href="blog-post.html") work
+          | ,
+          a.post-tags__item(href="blog-post.html") mizan
+          | ,
+          a.post-tags__item(href="blog-post.html") startup
+        a.entry-footer__links(href="home.html")
+          i.icon.icon-share.text-primary
+          |  Share This
+
+  // end .post
+
+
+  section.section-comment
+    h2.ui-title-inner Comments
+    .ui-decor-2.bg-primary
+
+    ul.comments-list.list-unstyled
+      li
+        article.comment.clearfix
+          .comment-face
+            img.img-responsive(src="assets/media/content/posts/face/1.jpg", alt="face")
+          .comment-inner
+            header.comment-header
+              cite.comment-author Danny Hill
+              time.comment-datetime(datetime="2017-10-27") 24 October 2016, 6:19pm
+            .comment-body
+              p Sit amet lorem ipsum dolor sit amet orem psum dolor sit amet consectetur adipisic elit sed do eiusmod tempor incididuntut labore et dolore magna aliqua utae enim ad minim veniam.
+            .comment-footer
+              a.comment-btn.text-primary(href="blog-post.html") - reply
+        ul.children.list-unstyled
+          li
+            article.comment.clearfix
+              .comment-face
+                img.img-responsive(src="assets/media/content/posts/face/2.jpg", alt="face")
+              .comment-inner
+                header.comment-header
+                  cite.comment-author Ren Boosak
+                  time.comment-datetime(datetime="2017-10-27") 24 October 2016, 6:19pm
+                .comment-body
+                  p Sit amet lorem ipsum dolor sit amet orem psum dolor sit amet consectetur adipisic elit sed do eiusmod tempor incididuntut labore et dolore magna.
+                .comment-footer
+                  a.comment-btn.text-primary(href="blog-post.html") - reply
+
+      li
+        article.comment.clearfix
+          .comment-face
+            img.img-responsive(src="assets/media/content/posts/face/3.jpg", alt="face")
+          .comment-inner
+            header.comment-header
+              cite.comment-author James Camron
+              time.comment-datetime(datetime="2017-10-27") 24 October 2016, 6:19pm
+            .comment-body
+              p Sit amet lorem ipsum dolor sit amet orem psum dolor sit amet consectetur adipisic elit sed do eiusmod tempor incididuntut labore et dolore magna aliqua utae enim ad minim veniam.
+
+            .comment-footer
+              a.comment-btn.text-primary(href="blog-post.html") - reply
+
+  // end .section-comment
+
+
+  section.section-reply-form#section-reply-form
+    h2.ui-title-inner Post Reply
+    .ui-decor-2.bg-primary
+
+    form.form-reply.ui-form(action="#", method="post")
+      .row
+        .col-xs-12
+          textarea.form-control(rows="5", placeholder="comments here ...")
+      .row
+        .col-md-6
+          input.form-control.text-center(type="text", placeholder="your name")
+        .col-md-6
+          input.form-control.text-center(type="email", placeholder="your email")
+      .row
+        .col-xs-12
+          button.ui-form__btn.btn.btn-grad-2 send comment
+
+  // end .section-reply-form

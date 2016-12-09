@@ -1,0 +1,490 @@
+/*01  Blog */
+
+.posts-group {
+  padding-bottom: 18px;
+}
+.posts-wrap {
+  padding-top: 93px;
+  padding-bottom: 45px;
+}
+
+.b-post {
+  .entry-title {
+    color: #333;
+  }
+  .entry-title,.entry-title a {
+    color: #333;
+  }
+  .entry-meta {
+    &__item {
+      margin-right: 6px;
+
+      white-space: nowrap;
+    }
+    &__icon {
+      display: inline-block;
+    }
+  }
+  .entry-date {
+    display: inline-block;
+    &__month {
+      display: block;
+    }
+  }
+  .entry-header {
+    position: relative;
+  }
+}
+
+
+.b-post-1 {
+  margin-right: 15px;
+  .entry-media {
+    position: relative;
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+      height: 200px;
+
+      content: '';
+
+      opacity: .8;
+      background-image: linear-gradient(to top, black 0%, transparent 100%);
+    }
+  }
+  .entry-main {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    padding: 0 50px 38px 40px;
+  }
+  .entry-title {
+    margin-top: 8px;
+
+    font: 700 16px/1.875 Montserrat;
+  }
+  .entry-title,.entry-title a {
+    color: #fff;
+  }
+  .entry-meta {
+    &__item {
+      &:after {
+        padding-left: 8px;
+
+        line-height: 1;
+
+        content: '/';
+
+        color: #fff;
+      }
+      &:last-child {
+        &:after {
+          content: none;
+        }
+      }
+    }
+    &__link {
+      font: 400 11px Montserrat;
+
+      text-transform: uppercase;
+
+      color: white;
+    }
+  }
+}
+
+
+.b-post-2 {
+  margin-bottom: 50px;
+  padding-bottom: 37px;
+
+  border-bottom: 1px solid #eee;
+  &:last-child {
+    margin-bottom: 0;
+
+    border-bottom: none;
+  }
+  .entry-main {
+    padding-left: 110px;
+  }
+  .entry-title {
+    margin-top: 15px;
+    margin-bottom: 14px;
+
+    font: 700 16px/1.875 Montserrat;
+  }
+  .entry-meta {
+    line-height: 1;
+    &__link {
+      font: 400 11px Montserrat;
+
+      text-transform: uppercase;
+    }
+  }
+  .entry-date {
+    position: absolute;
+    top: 2px;
+    left: 15px;
+
+    text-align: center;
+    &__month {
+      display: block;
+
+      margin-top: 8px;
+
+      font: 400 11px Montserrat;
+
+      text-transform: uppercase;
+
+      color: #999;
+    }
+    &__number {
+      display: block;
+
+      width: 70px;
+      height: 60px;
+      padding-top: 14px;
+
+      font: 700 24px Montserrat;
+
+      text-align: center;
+      text-transform: uppercase;
+
+      color: white;
+      border-radius: 30px;
+    }
+  }
+}
+
+.b-post-3 {
+  margin-bottom: 65px;
+  padding-bottom: 47px;
+
+  border-bottom: 1px solid #eee;
+  .entry-media {
+    position: relative;
+  }
+  .entry-title {
+    margin-bottom: 27px;
+
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .entry-meta {
+    &__item {
+      font: 400 11px Montserrat;
+
+      text-transform: uppercase;
+
+      color: #333;
+    }
+    &__link {
+      padding-left: 5px;
+    }
+  }
+  .entry-date {
+    position: absolute;
+    bottom: -20px;
+    left: 35px;
+
+    width: 80px;
+    height: 80px;
+    padding-top: 19px;
+
+    font-family: Montserrat;
+    line-height: 1;
+
+    text-align: center;
+
+    color: white;
+    &__number {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    &__month {
+      margin-top: 8px;
+
+      font-size: 11px;
+
+      text-transform: uppercase;
+    }
+  }
+  .entry-header {
+    margin-top: 50px;
+  }
+  .entry-content {
+    margin-bottom: 56px;
+    padding-right: 10px;
+  }
+  .entry-footer {
+    @include clearfix;
+    .btn {
+      float: left;
+    }
+    .wrap-btn-grad {
+      padding: 10px 40px;
+    }
+    &__links {
+      float: right;
+
+      margin-top: 14px;
+      margin-right: 19px;
+
+      font: 700 12px Montserrat;
+
+      text-transform: uppercase;
+
+      color: #999;
+      .icon {
+        display: inline-block;
+
+        margin-right: 10px;
+
+        font-size: 16px;
+        font-weight: normal;
+
+        vertical-align: sub;
+      }
+    }
+  }
+  .post-tags {
+    float: left;
+
+    margin-top: 14px;
+
+    font-family: Montserrat;
+    font-size: 12px;
+
+    text-transform: uppercase;
+    &__title {
+      display: inline-block;
+
+      margin-right: 8px;
+
+      color: #999;
+    }
+    &__item {
+      padding-left: 7px;
+
+      color: #333;
+    }
+  }
+  .entry-footer__link {
+    float: right;
+  }
+}
+
+
+.b-post-4 {
+  margin-bottom: 70px;
+
+  background-color: #fff;
+  .entry-media {
+    float: left;
+
+    width: 360px;
+  }
+  .entry-main {
+    padding-right: 40px;
+    padding-left: 400px;
+  }
+  .entry-title {
+    margin-top: 37px;
+    margin-bottom: 29px;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+
+    text-transform: uppercase;
+  }
+  .entry-meta {
+    float: left;
+    &__item {
+      font: 400 11px Montserrat;
+
+      text-transform: uppercase;
+
+      color: #333;
+      &:after {
+        padding-left: 7px;
+
+        content: '/';
+      }
+      &:last-child {
+        &:after {
+          content: none;
+        }
+      }
+    }
+  }
+  .entry-header {
+    overflow: hidden;
+
+    margin-top: 53px;
+    padding-bottom: 13px;
+
+    border-bottom: 1px solid #eee;
+    &__links {
+      float: right;
+
+      color: #999;
+    }
+  }
+  .entry-content {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+.b-post-5 {
+  .entry-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 3px;
+  }
+  .btn {
+    margin-top: 34px;
+  }
+}
+
+
+.b-post-full {
+  margin-bottom: 83px;
+  padding-bottom: 30px;
+}
+
+
+/*02  Comments */
+
+.section-comment {
+  margin-top: 67px;
+  margin-bottom: 73px;
+}
+.comments-list {
+  margin-top: 50px;
+  padding-right: 30px;
+  .children {
+    margin-left: 125px;
+  }
+  .comment {
+    margin-bottom: 45px;
+  }
+  .comment-face {
+    float: left;
+
+    width: 98px;
+  }
+  .comment-inner {
+    padding-left: 128px;
+  }
+  .comment-header {
+    margin-bottom: 15px;
+
+    font-family: Montserrat;
+    line-height: 1;
+  }
+  .comment-author {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+
+    color: #333;
+  }
+  .comment-datetime {
+    padding-right: 45px;
+
+    font-size: 11px;
+    font-weight: 400;
+    font-style: normal;
+
+    text-transform: uppercase;
+
+    color: #999;
+  }
+  .comment-btn {
+    display: block;
+
+    margin-top: 22px;
+
+    font: 400 11px Montserrat;
+
+    text-transform: uppercase;
+  }
+}
+
+
+
+/*03  Blog form */
+
+.form-reply {
+  margin-top: 55px;
+  .btn {
+    margin-top: 15px;
+  }
+}
+
+
+
+/*04 Other */
+
+.about-author {
+  &__img {
+    float: left;
+
+    width: 98px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  &__header {
+    margin-bottom: 12px;
+
+    line-height: 1;
+  }
+  &__title {
+    margin-right: 15px;
+
+    font-size: 15px;
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    color: #333;
+  }
+  &__category {
+    font-size: 12px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+  }
+  &__footer {
+    margin-top: 26px;
+    margin-left: 7px;
+  }
+  .social-net__link {
+    display: block;
+
+    width: 35px;
+    padding: 5px 4px;
+
+    text-align: center;
+
+    color: #fff;
+    &:hover {
+      color: #333;
+    }
+  }
+  .social-net__item {
+    margin-right: 2px;
+    padding: 0;
+  }
+}

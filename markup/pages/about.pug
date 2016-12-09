@@ -1,0 +1,148 @@
+extends _template.pug
+
+
+block head
+  head
+    +head(head.about)
+
+block content
+
+  +b-title-page('about mizan', 'who we are')
+
+
+  .section-default
+    .container
+      .row
+        .col-md-4
+          +post-5('1', 'what we think', 'Corem ipsum dolor sit amet consecter adipsicing elit sed temp incidid dolore magna aliqua ut enim minim benasqu nostrual ex citationullamco sed.')(class="b-post-5")
+        .col-md-4
+          +post-5('2', 'how we work', 'Corem ipsum dolor sit amet consecter adipsicing elit sed temp incidid dolore magna aliqua ut enim minim benasqu nostrual ex citationullamco sed.')(class="b-post-5")
+        .col-md-4
+          +post-5('3', 'what we believe', 'Corem ipsum dolor sit amet consecter adipsicing elit sed temp incidid dolore magna aliqua ut enim minim benasqu nostrual ex citationullamco sed.')(class="b-post-5")
+  // end .section-default
+
+  .section-type-5.bg-grey-2
+    .container
+      .row
+        .col-md-6
+          .owl-carousel.owl-theme.owl-theme_btn_left.enable-owl-carousel(
+            data-pagination="true"
+            data-navigation="false"
+            data-single-item="true"
+            data-auto-play="7000"
+            data-transition-style="fade"
+            data-main-text-animation="true"
+            data-after-init-delay="3000"
+            data-after-move-delay="1000"
+            data-stop-on-hover="true")
+
+            section.b-services
+              h2.ui-title-block-3 We follow intelligent methodology to deliver awesome solutions!
+              .ui-decor-4
+              .ui-title-inner-3 Ipsum dolor sit amet ulam consecter adipsicing elit sed tempor incididunt ut dolore magna aliqua.
+              p Sit amet lorem ipsum dolor sit amet orem psum dolor sit amet consectetur sed adipisic elit do eiusmod tempor incididuntut labore et dolore clipa magna aliqua utae enimad minim ven quis nostrud exercitation ullamco laboris nisi ut aliquip.
+              a.btn.btn-grad(href="services.html")
+                span.wrap-btn-grad view services
+            // end .b-services
+
+            section.b-services
+              h2.ui-title-block-3 Methodology to deliver awesome solutions!
+              .ui-decor-4
+              .ui-title-inner-3 Ipsum dolor sit amet ulam consecter adipsicing elit sed tempor incididunt ut dolore magna aliqua.
+              p Lorem ipsum dolor sit amet orem psum dolor sit amet consectetur sed adipisic elit do eiusmod tempor incididuntut labore et dolore clipa magna aliqua utae enimad minim ven quis nostrud exercitation ullamco laboris nisi ut aliquip.
+              a.btn.btn-grad(href="services.html")
+                span.wrap-btn-grad view services
+            // end .b-services
+
+            section.b-services
+              h2.ui-title-block-3 Intelligent methodology to deliver awesome solutions!
+              .ui-decor-4
+              .ui-title-inner-3 Ipsum dolor sit amet ulam consecter adipsicing elit sed tempor incididunt ut dolore magna aliqua.
+              p Dolor sit amet orem psum dolor sit amet consectetur sed adipisic elit do eiusmod tempor incididuntut labore et dolore clipa magna aliqua utae enimad minim ven quis nostrud exercitation ullamco laboris nisi ut aliquip.
+              a.btn.btn-grad(href="services.html")
+                span.wrap-btn-grad view services
+            // end .b-services
+  // end .section-type-5
+
+  +b-history()
+
+
+  section.section-team.bg-grey-2
+    .container
+      .row
+        .col-sm-11
+          .ui-subtitle-block Meet Our Professionals
+          h2.ui-title-block Team Members
+          .ui-decor-1.ui-decor-1_white.bg-primary
+          .block-paragraphs
+            p Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim minim beniaps quis nostrual exercitationullamco laboris sed bcea lorem ipsum dolor comoda lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt.
+
+      .b-team-group-2.wrap-inl-bl
+        .row
+          .col-md-3
+            +b-team('1', 'alex rasman', 'ceo . founder', '')(class="b-team_no-carousel")
+          .col-md-3
+            +b-team('2', 'tom albert', 'developement head', '')(class="b-team_no-carousel")
+          .col-md-3
+            +b-team('3', 'sara anderson', 'the designer', '')(class="b-team_no-carousel")
+          .col-md-3
+            +b-team('4', 'chris donald', 'manager admin', '')(class="b-team_no-carousel")
+          .col-md-3
+            +b-team('5', 'alvin donald', 'ceo . founder', '')(class="b-team_no-carousel")
+          .col-md-3
+            +b-team('6', 'julia white', 'developement head', '')(class="b-team_no-carousel")
+          .col-md-3
+            +b-team('7', 'Mac barnett', 'the designer', '')(class="b-team_no-carousel")
+          .col-md-3
+            +b-team('8', 'sandy earl', 'manager admin', '')(class="b-team_no-carousel")
+  // end .section-team
+
+
+  +b-skills()(class="b-skills_mrg-top_sm")
+
+
+  section.section-default.section-border-top
+    .container
+      .row
+        .col-sm-11
+          .ui-subtitle-block Read The Testimonials
+          h2.ui-title-block What Cliens Say
+          .ui-decor-1.bg-primary
+          .block-paragraphs
+            p Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim minim beniaps quis nostrual exercitationullamco laboris sed bcea lorem ipsum dolor comoda lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt.
+
+      .row
+        .col-xs-12
+          .owl-carousel.owl-theme.enable-owl-carousel(
+            data-min480="1"
+            data-min768="1"
+            data-min992="2"
+            data-min1200="2"
+            data-pagination="true"
+            data-navigation="false"
+            data-auto-play="4000"
+            data-stop-on-hover="true")
+
+            +b-blockquote-4('Corem ipsum dolor sit amet cons sudacter adipsicing elit sed usm temp incida dolore magna aliqua ut enim minim.', 'Martin Hans', 'Newtech Ltd.', 'face_60x60_1')(class="b-blockquote-4")
+
+            +b-blockquote-4('Corem ipsum dolor sit amet cons sudacter adipsicing elit sed usm temp incida dolore magna aliqua ut enim minim.', 'Sara Anderson', 'BigName Inc.', 'face_60x60_2')(class="b-blockquote-4")
+
+            +b-blockquote-4('Corem ipsum dolor sit amet cons sudacter adipsicing elit sed usm temp incida dolore magna aliqua ut enim minim.', 'Martin Hans', 'Newtech Ltd.', 'face_60x60_1')(class="b-blockquote-4")
+
+            +b-blockquote-4('Corem ipsum dolor sit amet cons sudacter adipsicing elit sed usm temp incida dolore magna aliqua ut enim minim.', 'Sara Anderson', 'BigName Inc.', 'face_60x60_2')(class="b-blockquote-4")
+
+            +b-blockquote-4('Corem ipsum dolor sit amet cons sudacter adipsicing elit sed usm temp incida dolore magna aliqua ut enim minim.', 'Martin Hans', 'Newtech Ltd.', 'face_60x60_1')(class="b-blockquote-4")
+
+            +b-blockquote-4('Corem ipsum dolor sit amet cons sudacter adipsicing elit sed usm temp incida dolore magna aliqua ut enim minim.', 'Sara Anderson', 'BigName Inc.', 'face_60x60_2')(class="b-blockquote-4")
+
+            +b-blockquote-4('Corem ipsum dolor sit amet cons sudacter adipsicing elit sed usm temp incida dolore magna aliqua ut enim minim.', 'Martin Hans', 'Newtech Ltd.', 'face_60x60_1')(class="b-blockquote-4")
+
+            +b-blockquote-4('Corem ipsum dolor sit amet cons sudacter adipsicing elit sed usm temp incida dolore magna aliqua ut enim minim.', 'Sara Anderson', 'BigName Inc.', 'face_60x60_2')(class="b-blockquote-4")
+  // end .section-default
+
+  .section-brands.bg-grey-2
+    .container
+      .row
+        .col-xs-12
+          +b-brands()
+  // end .section-brands

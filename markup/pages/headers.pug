@@ -1,0 +1,80 @@
+include ../components/headers/headers
+include ../components/footer/footer
+include ../components/loader/loader
+
+- headerPage = true
+
+doctype html
+html(lang="en")
+
+  head
+    title HEADERS
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    link(href="assets/css/master.css", rel="stylesheet")
+
+  body.header-demo
+    |%=symbols=%
+
+
+    // ==========================
+    // THIS CSS ONLY FOR DEMO PAGE
+    // ==========================
+
+    link(href="assets/plugins/headers/style.css", rel="stylesheet")
+
+    +fullScreenMenu()
+
+    +searchModal()
+
+    +mobileMenu()
+
+
+    // ==========================
+    // SLIDE MENU
+    // ==========================
+    +slideMenu-left()
+    +slideMenu-right()
+    +slideMenu-top()
+    +slideMenu-bottom()
+
+
+    div(data-canvas="container")
+
+      // ==========================
+      // Navigation
+      // ==========================
+
+      .demo-body.demo-header1.section-bg.section-bg_dark
+        .section-bg__inner
+          +mainNav-1()
+
+
+      .demo-body.demo-body-2h.demo-header-2.section-bg.section-bg_dark
+        .section-bg__inner
+          +mainNav-2()
+
+      .demo-body.demo-header-3.section-bg.section-bg_dark
+        .section-bg__inner
+          +mainNav-3()
+
+      .demo-body.demo-body-2h.demo-header-4.section-bg.section-bg_dark
+        .section-bg__inner
+          +mainNav-4()
+
+      .demo-body.demo-header-5.section-bg.section-bg_dark
+        .section-bg__inner
+          +mainNav-5()
+
+      .demo-body.demo-header-6.section-bg.section-bg_dark
+        .section-bg__inner
+          +mainNav-6()
+
+      .demo-body.demo-header-7.section-bg.section-bg_dark
+        .section-bg__inner
+          +mainNav-7()
+
+      script(src='assets/libs/jquery-1.12.4.min.js')
+      script(src="assets/libs/bootstrap/bootstrap.min.js")
+      script(src="assets/plugins/headers/slidebar.js")
+      script(src="assets/plugins/headers/header.js")

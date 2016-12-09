@@ -1,0 +1,31 @@
+.section-title-page {
+  position: relative;
+
+  height: 400px;
+
+  text-align: center;
+
+  background: url('../media/components/b-title-page/bg-1.jpg');
+}
+
+.b-title-page {
+  margin-top: 203px;
+  margin-bottom: 4px;
+
+  font: 700 44px Montserrat;
+
+  text-transform: uppercase;
+
+  color: #fff;
+  &__info {
+    font: 400 20px Montserrat;
+
+    letter-spacing: .5em;
+    text-transform: uppercase;
+
+    color: #fff;
+  }
+  &__subtitle {
+    text-transform: none;
+  }
+}

@@ -1,0 +1,86 @@
+.b-work {
+  p + p {
+    margin-top: 28px;
+  }
+  .btn {
+    margin-top: 76px;
+  }
+}
+
+.b-work-carousel {
+  max-width: 1450px;
+  margin: 0 auto 77px;
+  &__item {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+.b-work-description {
+  margin-top: 94px;
+  margin-bottom: 65px;
+
+  text-align: center;
+  &__item {
+    display: inline-block;
+
+    margin-right: -3px;
+    padding-right: 69px;
+    padding-left: 69px;
+
+    vertical-align: top;
+
+    border-right: 1px solid #ddd;
+    &:last-child {
+      border-right: none;
+    }
+  }
+  &__name {
+    margin-bottom: 6px;
+
+    font: 700 16px/1 Montserrat;
+
+    color: #333;
+  }
+  .social-net {
+    margin-left: 0;
+  }
+  .social-net__item {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .social-net__link {
+    font-size: 14px;
+
+    opacity: .9;
+  }
+}
+
+.b-work-2 {
+  padding-top: 117px;
+  .ui-title-inner {
+    margin-top: 154px;
+    margin-bottom: 17px;
+
+    text-transform: none;
+  }
+  .ui-decor-4 {
+    margin-top: 38px;
+    margin-bottom: 24px;
+  }
+  &__description {
+    margin-top: 9px;
+    font: 400 12px Montserrat;
+
+    color: #333;
+  }
+  &__description-info {
+    margin-left: 8px;
+
+    font-weight: 700;
+  }
+  &__slider {
+    margin: 0 -85px -55px 0;
+    padding-top: 54px;
+  }
+}

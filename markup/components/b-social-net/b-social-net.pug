@@ -1,0 +1,9 @@
+mixin social-net(items, mod)
+  ul.social-net.list-inline(class!=attributes.class)
+    each item in items
+      li.social-net__item
+        a.social-net__link.text-primary_h(href=item.href + '.com')
+          i.icon.fa(class="fa-" + item.icon)
+
+  // end .social-list
+

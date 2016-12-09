@@ -1,0 +1,248 @@
+/* MAIN SLIDER */
+
+.main-slider-1 {
+  position: relative;
+
+  text-align: center;
+
+  color: white;
+  .main-slider {
+    &__title {
+      margin-bottom: 28px;
+
+      font-size: 58px;
+      font-weight: 700;
+
+      letter-spacing: .02em;
+      text-transform: uppercase;
+
+      color: #fff;
+    }
+    &__subtitle {
+      margin-bottom: 11px;
+      padding-top: 322px;
+
+      font: 700 20px Montserrat;
+
+      letter-spacing: .5em;
+      text-transform: uppercase;
+    }
+    &__btn {
+      margin: 10px 8px;
+      &_white {
+        background-color: #fff;
+      }
+    }
+  }
+  .social-net {
+    margin-top: 30px;
+    &__item {
+      margin-right: 0;
+    }
+    &__link {
+      color: #fff;
+    }
+  }
+  .sp-image-container:after {
+    opacity: .9;
+  }
+}
+
+.main-slider-2 {
+  position: relative;
+
+  text-align: center;
+
+  color: white;
+  .main-slider {
+    &__title {
+      margin-top: 333px;
+      margin-bottom: 25px;
+
+      font: 300 70px Lato;
+
+      color: white;
+    }
+    &__info {
+      margin-bottom: 55px;
+
+      font-size: 24px;
+      line-height: 1.333;
+    }
+    &__btn {
+      margin: 10px 8px;
+      &_white {
+        background-color: #fff;
+      }
+    }
+  }
+  .sp-image-container:after {
+    opacity: .8;
+  }
+}
+
+.sp-image-container:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  content: '';
+}
+
+
+/* Buttons
+--------------------------------------------------*/
+.sp-buttons {
+  position: absolute;
+  z-index: 100;
+  bottom: 100px;
+  left: 0;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+.sp-button {
+  display: inline-block;
+
+  width: 5px;
+  height: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+
+  cursor: pointer;
+  transition: all .3s;
+
+  opacity: .5;
+  background-color: white;
+  &:hover {
+    height: 30px;
+
+    opacity: 1;
+  }
+}
+
+.sp-selected-button {
+  height: 30px;
+
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .sp-button {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media only screen and (min-width: 568px) and (max-width: 768px) {
+  .sp-button {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  .sp-button {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+
+/* Arrows
+--------------------------------------------------*/
+.sp-arrows {
+  position: absolute;
+}
+
+.sp-fade-arrows {
+  transition: opacity .5s;
+
+  opacity: .5;
+}
+
+.sp-slides-container:hover .sp-fade-arrows {
+  opacity: 1;
+}
+
+.sp-horizontal .sp-arrows {
+  z-index: 10;
+  top: 50%;
+  right: 0;
+
+  width: 100%;
+  margin-top: 0;
+
+  text-align: right;
+}
+
+.sp-vertical .sp-arrows {
+  top: 0;
+  left: 50%;
+
+  height: 100%;
+  margin-left: -10px;
+}
+
+.sp-arrow {
+  position: absolute;
+  bottom: 0;
+
+  display: block;
+
+  font: 400 12px Montserrat;
+
+  cursor: pointer;
+  transition: all .3s;
+  text-transform: uppercase;
+
+  color: #fff;
+  &:after {
+    display: inline-block;
+
+    width: 22px;
+    height: 2px;
+
+    content: '';
+
+    background-color: white;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.sp-horizontal .sp-previous-arrow {
+  left: 80px;
+
+  text-align: left;
+  &:before {
+    display: block;
+
+    content: 'prev';
+  }
+}
+
+.sp-horizontal .sp-next-arrow {
+  right: 80px;
+  &:before {
+    display: block;
+
+    content: 'next';
+  }
+}
+
+
+
+.sp-vertical .sp-previous-arrow {
+  top: 20px;
+}
+
+.sp-vertical .sp-next-arrow {
+  bottom: 20px;
+}

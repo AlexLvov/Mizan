@@ -1,0 +1,69 @@
+.b-skills {
+  padding-top: 200px;
+  padding-bottom: 107px;
+  &__inner {
+    padding-left: 30px;
+  }
+  .ui-title-block-2 {
+    margin-bottom: 35px;
+    padding-top: 20px;
+  }
+  &_mrg-top_sm {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
+}
+
+.b-skills-banner {
+  position: relative;
+
+  overflow: hidden;
+
+  height: 370px;
+  padding: 50px 20px 20px;
+
+  font-family: Montserrat;
+  font-weight: 400;
+
+  text-align: center;
+
+  color: #fff;
+  &__number {
+    position: relative;
+
+    display: block;
+
+    font-size: 134px;
+    line-height: 1;
+    &:after {
+      display: block;
+
+      width: 2px;
+      height: 40px;
+      margin: 16px auto 20px;
+
+      content: '';
+
+      background-color: white;
+    }
+  }
+  &__title {
+    font-size: 24px;
+
+    letter-spacing: .02em;
+  }
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 1000px;
+    margin-left: -500px;
+
+    font-size: 190px;
+
+    text-transform: uppercase;
+
+    opacity: .02;
+  }
+}

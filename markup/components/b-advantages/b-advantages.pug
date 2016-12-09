@@ -1,0 +1,80 @@
+mixin b-advantages()
+
+  ul.b-advantages-1.list-unstyled(class!=attributes.class)
+    li.b-advantages-1__item
+      i.b-advantages-1__icon.icon-equalizer
+      .b-advantages-1__title it is a multipurpose design
+      .b-advantages-1__info Seta nostrud dolore magna aliqua ut enim minim beniaps quis nostrual dolor sit amet consecte adipsicing sed elit tempor incididunt
+      i.b-advantages-1__decor.fa.fa-long-arrow-right
+    li.b-advantages-1__item.active
+      i.b-advantages-1__icon.icon-settings
+      .b-advantages-1__title it is easier to customize
+      .b-advantages-1__info Seta nostrud dolore magna aliqua ut enim minim beniaps quis nostrual dolor sit amet consecte adipsicing sed elit tempor incididunt
+      i.b-advantages-1__decor.fa.fa-long-arrow-right
+    li.b-advantages-1__item
+      i.b-advantages-1__icon.icon-earphones-alt
+      .b-advantages-1__title we provide quick 24/7 support
+      .b-advantages-1__info Seta nostrud dolore magna aliqua ut enim minim beniaps quis nostrual dolor sit amet consecte adipsicing sed elit tempor incididunt
+      i.b-advantages-1__decor.fa.fa-long-arrow-right
+
+  // end .b-advantages
+
+
+mixin b-advantages-3()
+
+  ul.b-advantages-3.list-unstyled(class!=attributes.class)
+    li.b-advantages-3__item
+      i.b-advantages-3__icon.icon-earphones-alt
+      .b-advantages-3__title providing<br>24/7 support
+      i.b-advantages-3__decor.fa.fa-long-arrow-right
+    li.b-advantages-3__item.active
+      i.b-advantages-3__icon.icon-settings
+      .b-advantages-3__title design is<br>customizable
+      i.b-advantages-3__decor.fa.fa-long-arrow-right
+    li.b-advantages-3__item
+      i.b-advantages-3__icon.icon-equalizer
+      .b-advantages-3__title design is<br>multipurpose
+      i.b-advantages-3__decor.fa.fa-long-arrow-right
+
+  // end .b-advantages
+
+
+
+mixin b-advantages-2(icon, title, info, btn)
+
+  section.b-advantages(class!=attributes.class)
+    i.b-advantages__icon(class=icon)
+    .b-advantages__inner
+      h3.b-advantages__title= title
+      .b-advantages__info= info
+      if btn
+        a.btn.btn-default(href="home.html")= btn
+
+  // end .b-advantages
+
+
+mixin b-advantages-2_color(icon, title, info, btn)
+
+  section.b-advantages(class!=attributes.class)
+    .b-advantages__icon
+      img(src="assets/media/components/b-advantages/" + icon, alt="foto")
+    h3.b-advantages__title= title
+    .b-advantages__info= info
+    if btn
+      a.btn.btn-default(href="home.html")= btn
+
+  // end .b-advantages
+
+
+mixin b-advantages-2_mod-a(icon, title, info, btn)
+
+  section.b-advantages(class!=attributes.class)
+    i.b-advantages__icon(class=icon)
+    .b-advantages__inner
+      h3.b-advantages__title= title
+      .b-advantages__info= info
+      .b-advantages__decor.bg-primary
+      if btn
+        a.b-advantages__link(href="home.html")= btn
+
+  // end .b-advantages

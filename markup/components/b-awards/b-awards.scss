@@ -1,0 +1,48 @@
+.b-awards {
+  margin-top: 73px;
+  .ui-decor-1 {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    vertical-align: bottom;
+    &:after {
+      bottom: -117px;
+    }
+  }
+  &__title {
+    display: inline-block;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    vertical-align: top;
+  }
+}
+
+.b-awards-list {
+  margin: 36px 48px 0 28px;
+
+  text-align: center;
+  &__item {
+    width: 33.3%;
+    margin-right: -3px;
+
+    vertical-align: top;
+  }
+  &__title {
+    display: block;
+
+    padding: 15px 20px 0;
+
+    font: 400 11px/1.2 Montserrat;
+
+    text-transform: uppercase;
+
+    color: #666;
+  }
+}

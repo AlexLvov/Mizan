@@ -1,0 +1,99 @@
+extends _template.pug
+
+block head
+  head
+    +head(head.services)
+
+block content
+
+  +b-title-page('what we do', 'services')
+
+
+  section.section-default
+    .container
+      .row
+        .col-sm-11
+          .ui-subtitle-block Success is Everything
+          h2.ui-title-block Our Expertise
+          .ui-decor-1.bg-primary
+          .block-paragraphs
+            p Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim minim beniaps quis nostrual exercitationullamco laboris sed bcea lorem ipsum dolor comoda lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt.
+      .b-advantages-4-group.wrap-inl-bl
+        .row
+          .col-md-4.col-sm-6
+            +b-advantages-2_color('icon-color-1.png', 'Web Design', 'Elit sed temp incidid dolore magna aliqua oram cinim beniaps quis nostrual', 'more info')(class="b-advantages-4 b-advantages-4_border_green")
+          .col-md-4.col-sm-6
+            +b-advantages-2_color('icon-color-2.png', 'digital marketing', 'Elit sed temp incidid dolore magna aliqua oram cinim beniaps quis nostrual', 'more info')(class="b-advantages-4 b-advantages-4_border_blue")
+          .col-md-4.col-sm-6
+            +b-advantages-2_color('icon-color-3.png', 'startup ideas', 'Elit sed temp incidid dolore magna aliqua oram cinim beniaps quis nostrual', 'more info')(class="b-advantages-4 b-advantages-4_border_pink")
+          .col-md-4.col-sm-6
+            +b-advantages-2_color('icon-color-4.png', 'user interaction', 'Elit sed temp incidid dolore magna aliqua oram cinim beniaps quis nostrual', 'more info')(class="b-advantages-4 b-advantages-4_border_pink")
+          .col-md-4.col-sm-6
+            +b-advantages-2_color('icon-color-5.png', 'photography', 'Elit sed temp incidid dolore magna aliqua oram cinim beniaps quis nostrual', 'more info')(class="b-advantages-4 b-advantages-4_border_blue")
+          .col-md-4.col-sm-6
+            +b-advantages-2_color('icon-color-6.png', 'social analytics', 'Elit sed temp incidid dolore magna aliqua oram cinim beniaps quis nostrual', 'more info')(class="b-advantages-4 b-advantages-4_border_green")
+      // end .b-advantages-4-group
+  // end .section-default
+
+
+  +b-advantages()(class="b-advantages-1_vert_bottom")
+
+
+  .block-table
+    .block-table__cell.col-md-8
+      .area-bg.area-bg_grad.area-bg_op_85.parallax(style="background-image: url(assets/media/content/bg/bg-4.jpg);")
+        .area-bg__inner
+          .section-type-4
+            +b-advantages-2_mod-a('flaticon-diamond', 'Clean Development', 'Aorem ipsum dolor sit amet consecter adipsicing elit sed usa tempor incididunt ut reitad dolore magna.', 'Learn More')(class="b-advantages-5")
+            +b-advantages-2_mod-a('flaticon-social', 'Quick 24/7 Support', 'Aorem ipsum dolor sit amet consecter adipsicing elit sed usa tempor incididunt ut reitad dolore magna.', 'Learn More')(class="b-advantages-5")
+            +b-advantages-2_mod-a('flaticon-arrows-1', 'Advanced Features', 'Aorem ipsum dolor sit amet consecter adipsicing elit sed usa tempor incididunt ut reitad dolore magna.', 'Learn More')(class="b-advantages-5")
+            +b-advantages-2_mod-a('flaticon-technology-1', 'Multipurpose Design', 'Aorem ipsum dolor sit amet consecter adipsicing elit sed usa tempor incididunt ut reitad dolore magna.', 'Learn More')(class="b-advantages-5")
+    .block-table__cell.col-md-4
+      img.img-bg(src="assets/media/content/other/4.jpg", alt="foto")
+  // end .block-table
+
+
+  section.section-default.section-default_pdn-btm_0
+    .container
+      .row
+        .col-sm-11
+          .ui-subtitle-block The Works We Did
+          h2.ui-title-block Featured Works
+          .ui-decor-1.bg-primary
+          .block-paragraphs
+            p Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim minim beniaps quis nostrual exercitationullamco laboris sed bcea lorem ipsum dolor comoda lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt.
+    .text-center
+      +b-isotope-1_4-item()(class="b-isotope_mod-a")
+  // end .section-default
+
+
+  section.section-default
+    .container
+      .row
+        .col-sm-11
+          .ui-subtitle-block The Works We Did
+          h2.ui-title-block The Pricing
+          .ui-decor-1.bg-primary
+          .block-paragraphs
+            p Corem ipsum dolor sit amet consecter adipsicing elit sed usm tempor incididunt ut reitad dolore magna aliqua ut enim minim beniaps quis nostrual exercitationullamco laboris sed bcea lorem ipsum dolor comoda lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt.
+      .row
+        .col-xs-12
+          +b-pricing('standard', '', '29', '', '',
+          ([{'ds' : 'Aorem ipsum dolor'},
+            {'ds' : 'Tempor incididunts lab dolore'},
+            {'ds' : 'Veniam nostrud exercitation'},
+            {'ds' : 'Eorem ipsum dolor sit'}]))(class="bg-grey-2")
+          +b-pricing('premium', '', '69', '', '',
+          ([{'ds' : 'Aorem ipsum dolor'},
+            {'ds' : 'Tempor incididunts lab dolore'},
+            {'ds' : 'Veniam nostrud exercitation'},
+            {'ds' : 'Eorem ipsum dolor sit'}]))(class="active")
+          +b-pricing('ultimate', '', '99', '', '',
+          ([{'ds' : 'Aorem ipsum dolor'},
+            {'ds' : 'Tempor incididunts lab dolore'},
+            {'ds' : 'Veniam nostrud exercitation'},
+            {'ds' : 'Eorem ipsum dolor sit'}]))(class="bg-grey-2")
+  // end .section-default
+
+
+  +b-info-2()

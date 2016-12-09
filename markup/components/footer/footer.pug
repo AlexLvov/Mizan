@@ -1,0 +1,78 @@
+mixin footer()
+  footer.footer
+    .footer__main
+      .container
+        .row
+          .col-md-3
+            .footer-section
+              .footer-logo
+                a.footer-logo__link(href="home.html")
+                  img.img-responsive(src="assets/media/general/logo-type-2.png", alt="Logo")
+                .footer-logo__slogan multipurpose psd template
+              .footer__info
+                p Ipsum dolor sit amet consect adipsicing sed elit tempor incididunt ueta nostrud dolore magna aliqua ut enim minim .
+
+            section.footer-section.footer-section_contact
+              h3.footer-section__title headoffice
+              p 3638 LandsRiver Street, Welson Dr. California, CA 36038
+              .footer-contact
+                .footer-contact__item
+                  span.footer-contact__title Email :
+                  |  info @ mizanagency.com
+                .footer-contact__item
+                  span.footer-contact__title Phone :
+                  |  +1 2345 678 90
+
+          .col-md-3
+            section.footer-section.footer-section_links
+              h3.footer-section__title.footer-section__title_decor.bg-primary_a site links
+              ul.footer-list.list.list-mark-4
+                li.footer-list__item
+                  a.footer-list__link(href="about.html") About Mizan
+                li.footer-list__item
+                  a.footer-list__link(href="privacy-policy.html") The Privacy Policy
+                li.footer-list__item
+                  a.footer-list__link(href="portfolio.html") Our Works
+                li.footer-list__item
+                  a.footer-list__link(href="home.html") What We Offers
+                li.footer-list__item
+                  a.footer-list__link(href="home.html") Read FAQ’s
+
+          .col-md-3
+            section.footer-section
+              h3.footer-section__title.footer-section__title_decor.bg-primary_a latest tweets
+              .footer-social-net
+                .footer-social-net__text Everything You Need to Know about UX Design get the ideas and some Goodies
+                  a.footer-social-net__link.text-primary_h(href="https://top.co/KaPft2Bd")  https://top.co/KaPft2Bd
+                  time.footer-social-net__time(datetime="2012-10-27") 7 hrs ago
+              .footer-social-net
+                .footer-social-net__text Learn Logo Design Fundamentals: Simple & Solid Brand Marks  #logodesign
+                  a.footer-social-net__link.text-primary_h(href="http://bit.ly/2cTv3du")  http://bit.ly/2cTv3du
+                  time.footer-social-net__time(datetime="2012-10-27") 2 hrs ago
+
+          .col-md-3
+            section.footer-section
+              h3.footer-section__title.footer-section__title_decor.bg-primary_a SUBSCRIBE
+              .footer-form__info Subscribe to get news updates from us
+              form.footer-form
+                input.footer-form__input.form-control(type="email", placeholder="your email")
+                button.footer-form__btn.btn.btn-primary.btn-block I want newsletter
+
+              .text-center
+                +social-net([
+                  {href: "twitter", icon: 'twitter'},
+                  {href: "facebook", icon: 'facebook'},
+                  {href: "linkedin", icon: 'linkedin'},
+                  {href: "plus.google", icon: 'google-plus'},
+                  {href: "dribbble", icon: 'dribbble'},
+                  {href: "pinterest", icon: 'pinterest-p'}], '')
+
+    .copyright
+      .container
+        .row
+          .col-xs-12
+            .copyright__inner © Copyright 2016 Mizan Multipurpose PSD - All Rights Reserved
+              span.scroll-top.fa.fa-angle-up
+  // .footer
+
+

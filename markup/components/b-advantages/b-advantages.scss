@@ -1,0 +1,276 @@
+.b-advantages-1 {
+  position: relative;
+
+  margin-bottom: 0;
+
+  @include clearfix;
+  &__icon {
+    font-size: 32px;
+  }
+  &__title {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 24px;
+
+    font: 700 16px/1.2 Montserrat;
+
+    text-transform: uppercase;
+  }
+  &__info {
+    display: none;
+
+    line-height: 1.714;
+  }
+  &__item {
+    display: inline-block;
+
+    width: 33.33%;
+    margin-right: -3px;
+    padding: 76px 5.5% 74px;
+
+    text-align: center;
+    vertical-align: top;
+
+    color: #fff;
+    &:nth-child(1) {
+      background-color: #43c5b9;
+    }
+    &:nth-child(2) {
+      background-color: #27a6eb;
+    }
+    &:nth-child(3) {
+      background-color: #c644fc;
+    }
+    &.active {
+      .b-advantages-1__info {
+        display: block;
+      }
+      .b-advantages-1__decor {
+        display: none;
+      }
+    }
+  }
+  &__decor {
+    display: inline-block;
+  }
+  &_vert_bottom & {
+    &__item {
+      vertical-align: bottom;
+    }
+  }
+}
+
+
+.b-advantages-2 {
+  margin-bottom: 0;
+  padding-top: 43px;
+  padding-bottom: 30px;
+  padding-left: 160px;
+
+  @include clearfix;
+  .b-advantages {
+    &__icon {
+      position: absolute;
+      top: 45px;
+      left: 80px;
+
+      font-size: 45px;
+      line-height: 1;
+
+      @include grad;
+    }
+    &__title {
+      margin-top: 0;
+      margin-bottom: 20px;
+
+      font-size: 16px;
+      font-weight: 700;
+
+      text-transform: uppercase;
+    }
+  }
+  &__img {
+    width: auto;
+    height: 100%;
+  }
+  &_mod-a {
+    max-width: 770px;
+    padding: 100px 126px;
+    .b-advantages {
+      &__title {
+        position: relative;
+
+        margin-bottom: 50px;
+
+        font-size: 18px;
+        font-weight: 400;
+        &:after {
+          width: 40px;
+          height: 3px;
+
+          content: '';
+
+          background-color: #ccc;
+        }
+      }
+      &__inner {
+        padding-left: 80px;
+      }
+      &__icon {
+        top: 100px;
+        left: 130px;
+      }
+    }
+  }
+  &_left {
+    float: right;
+  }
+}
+
+
+.b-advantages-3 {
+  position: relative;
+  z-index: 100;
+
+  margin-top: -45px;
+  &__title {
+    margin-top: 26px;
+    margin-bottom: 22px;
+
+    font: 400 16px/22px Montserrat;
+
+    text-transform: uppercase;
+  }
+  &__icon {
+    font-size: 48px;
+  }
+  &__item {
+    position: relative;
+
+    display: inline-block;
+
+    width: 33.33%;
+    height: 280px;
+    margin-right: -3px;
+    padding: 60px 20px 20px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    color: #fff;
+    &:nth-child(1) {
+      background-color: #c644fc;
+    }
+    &:nth-child(2) {
+      background-color: #27a6eb;
+    }
+    &:nth-child(3) {
+      background-color: #43c5b9;
+    }
+    &.active {
+      z-index: 10;
+
+      height: 310px;
+      padding-top: 70px;
+
+      box-shadow: 0 15px 35px rgba(0, 0, 0, .25);
+    }
+  }
+}
+
+
+.b-advantages-4-group {
+  margin-top: 38px;
+}
+.b-advantages-4 {
+  margin: 55px 15px 0;
+  padding: 67px 50px 60px;
+
+  text-align: center;
+
+  background-color: #f9f9f9;
+  .b-advantages {
+    &__title {
+      margin-top: 27px;
+      margin-bottom: 18px;
+
+      font-size: 16px;
+      font-weight: 700;
+
+      text-transform: uppercase;
+    }
+    &__icon {
+      display: inline-block;
+
+      height: 70px;
+    }
+  }
+  .btn {
+    margin-top: 33px;
+
+    border-width: 1px;
+    background-color: transparent;
+  }
+  &_border_green {
+    border-top: 3px solid #43c5b9;
+  }
+  &_border_blue {
+    border-top: 3px solid #27a6eb;
+  }
+  &_border_pink {
+    border-top: 3px solid #c644fc;
+  }
+}
+
+
+.b-advantages-5 {
+  position: relative;
+
+  display: inline-block;
+
+  width: 50%;
+  margin-right: -3px;
+  margin-bottom: 100px;
+  padding-right: 7.5%;
+
+  vertical-align: top;
+
+  color: #fff;
+  .b-advantages {
+    &__title {
+      margin-bottom: 15px;
+
+      font-size: 18px;
+      font-weight: 700;
+
+      color: #fff;
+    }
+    &__icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      font-size: 33px;
+    }
+    &__link {
+      display: block;
+
+      margin-top: 15px;
+
+      font: 400 12px/1 Montserrat;
+
+      color: #fff;
+    }
+    &__inner {
+      padding-left: 50px;
+    }
+    &__info {
+      margin-bottom: 29px;
+    }
+    &__decor {
+      width: 30px;
+      height: 3px;
+    }
+  }
+}
